@@ -17,7 +17,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
     }
   
     const groupOptions = groupArray.map((group, index) => {
-        return <option key={index} value={[index+1, group]}>{group}</option>
+        return <option key={index} value={JSON.stringify({index, value:group})}>{group}</option>
     });
 
     return(
@@ -29,7 +29,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 name="characteristic"
                 defaultValue={""}
                 onChange={async (event) => {
-                    const groupKey = `${event.target.value}`;
+                    let groupKey = `${event.target.value}`;
                     setGroupArray(characteristics[groupKey]);
                 }}>
                 
@@ -38,7 +38,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 <option value="ageCat">Age</option>
                 <option value="DVSex21">Sex</option>
                 <option value="SRInc">Income</option>
-                <option value="hedqual2">Education Level</option>
+                <option value="hedqual2">University Education</option>
             </select>
             <label htmlFor="group-1">Group 1</label>
             <select
@@ -46,7 +46,12 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 type="text"
                 name="group1"
                 defaultValue={[]}
-                onChange={(event) => console.log(event.target.value)}>
+                onChange={(event) => {
+                    let obj = JSON.parse(event.target.value)
+                    console.log(obj);
+                    setGroup1Id(obj["index"]+1);
+                    setGroup1Name(obj.value);
+                }}>
                 
                 <option disabled value="">Select first group</option>
                 {groupOptions}
