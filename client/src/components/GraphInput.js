@@ -56,6 +56,22 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 <option disabled value="">Select first group</option>
                 {groupOptions}
             </select>
+            <label htmlFor="group-2">Group 2</label>
+            <select
+                id="group-2"
+                type="text"
+                name="group2"
+                defaultValue={[]}
+                onChange={(event) => {
+                    let obj = JSON.parse(event.target.value)
+                    console.log(obj);
+                    setGroup2Id(obj["index"]+1);
+                    setGroup2Name(obj.value);
+                }}>
+                
+                <option disabled value="">Select second group</option>
+                {groupOptions}
+            </select>
         </form>
     )
 }
