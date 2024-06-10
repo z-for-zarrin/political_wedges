@@ -20,9 +20,21 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
         setGroupArray(characteristics[`${event.target.value}`]);
         setGroupKey(event.target.value);
     }
+
+    const group1Options = groupArray.map((group, index) => {
+        if(index !== group2Id - 1){
+            return <option key={index} value={JSON.stringify({index, value:group})}>{group}</option>
+        } else {
+            return <option key={index} value={group} disabled>{group}</option>
+        }
+    });
   
-    const groupOptions = groupArray.map((group, index) => {
-        return <option key={index} value={JSON.stringify({index, value:group})}>{group}</option>
+    const group2Options = groupArray.map((group, index) => {
+        if(index !== group1Id - 1){
+            return <option key={index} value={JSON.stringify({index, value:group})}>{group}</option>
+        } else {
+            return <option key={index} value={group} disabled>{group}</option>
+        }
     });
 
     return(
@@ -56,7 +68,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 }}>
                 
                 <option disabled value="">Select first group</option>
-                {groupOptions}
+                {group1Options}
             </select>
             <label htmlFor="group-2">Group 2</label>
             <select
@@ -72,7 +84,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 }}>
                 
                 <option disabled value="">Select second group</option>
-                {groupOptions}
+                {group2Options}
             </select>
         </form>
     )
