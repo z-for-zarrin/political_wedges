@@ -40,7 +40,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 <option value="SRInc">Income</option>
                 <option value="hedqual2">Education Level</option>
             </select>
-            <label htmlFor="group-1"></label>
+            <label htmlFor="group-1">Group 1</label>
             <select
                 id="group-1"
                 type="text"
@@ -49,6 +49,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 onChange={(event) => console.log(event.target.value)}>
                 
                 <option disabled value="">Select first group</option>
+                {groupOptions}
             </select>
         </form>
     )
