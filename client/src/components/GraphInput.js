@@ -4,7 +4,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
     group2Id, setGroup2Id, group2Name, setGroup2Name, question, setQuestion
     }) => {
 
-    // const[groupKey, setGroupKey] = useState(null);
+    const[groupKey, setGroupKey] = useState("");
     const[groupArray, setGroupArray] = useState([]);
     
     const characteristics = {
@@ -14,6 +14,11 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                    "Plaid Cymru", "Green", "UKIP", "Reform"],
          SRInc:   ["Identify as high income", "Idenitfy as middle income", "Identify as low income"],
       hedqual2:   ["Degree", "No degree"]
+    }
+
+    const charChangeHandler = (event) => {
+        setGroupArray(characteristics[`${event.target.value}`]);
+        setGroupKey(event.target.value);
     }
   
     const groupOptions = groupArray.map((group, index) => {
@@ -28,10 +33,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 type="text"
                 name="characteristic"
                 defaultValue={""}
-                onChange={async (event) => {
-                    let groupKey = `${event.target.value}`;
-                    setGroupArray(characteristics[groupKey]);
-                }}>
+                onChange={charChangeHandler}>
                 
                 <option disabled value="">Select demographic characteristic</option>
                 <option value="partyfw">Party Preference</option>
