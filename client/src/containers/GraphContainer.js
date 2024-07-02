@@ -12,6 +12,7 @@ const GraphContainer = () => {
 
     return (
         <section>
+            Make a graph!
             <GraphInput
                 group1Id={group1Id}
                 setGroup1Id={setGroup1Id}

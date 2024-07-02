@@ -3,21 +3,28 @@ import './App.css';
 import GraphContainer from './containers/GraphContainer.js';
 import About from './components/About.js';
 import Explanation from './components/Explanation.js';
+import Navigation from './components/Navigation.js';
 
 function App() {
 
   const wedgeRoutes = createBrowserRouter([
     {
-        path: '/',
-        element: <GraphContainer />
-    },
-    {
-        path: '/about-us',
-        element: <About />
-    },
-    {
-        path: '/how-it-works',
-        element: <Explanation />
+        path: "/",
+        element: <Navigation />,
+        children: [ 
+            {
+                path: "/create",
+                element: <GraphContainer />
+            },
+            {
+                path: "/how-it-works",
+                element: <Explanation />
+            },
+            {
+                path: "/about-us",
+                element: <About />
+            }
+      ]
     }
   ]);
 
