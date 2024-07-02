@@ -1,3 +1,31 @@
 header{
   color: darkblue;
+  margin-left: 10px;
+}
+
+nav > ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: plum;
+}
+
+.nav-item{
+  float: left;
+}
+
+.nav-item a:link, a:visited{
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  color: black;
+}
+
+.nav-item:hover{
+  background-color: rgb(222, 115, 222);
+}
+
+section{
+  margin: 20px;
 }
