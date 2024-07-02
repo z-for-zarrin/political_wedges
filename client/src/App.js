@@ -6,9 +6,9 @@ import GraphInput from './components/GraphInput.js';
 function App() {
 
   const[group1Id, setGroup1Id] = useState(null);
-  const[group1Name, setGroup1Name] = useState(null);
+  const[group1Name, setGroup1Name] = useState("");
   const[group2Id, setGroup2Id] = useState(null);
-  const[group2Name, setGroup2Name] = useState(null);
+  const[group2Name, setGroup2Name] = useState("");
   const[question, setQuestion] = useState(null);
 
   return (

@@ -19,6 +19,10 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
     const charChangeHandler = (event) => {
         setGroupArray(characteristics[`${event.target.value}`]);
         setGroupKey(event.target.value);
+        setGroup1Id(0);
+        setGroup1Name("");
+        setGroup2Id(0);
+        setGroup2Name("");
     }
 
     const group1Options = groupArray.map((group, index) => {
@@ -44,7 +48,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 id="characteristic-select"
                 type="text"
                 name="characteristic"
-                defaultValue={""}
+                defaultValue=""
                 onChange={charChangeHandler}>
                 
                 <option disabled value="">Select demographic characteristic</option>
@@ -59,15 +63,14 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 id="group-1"
                 type="text"
                 name="group1"
-                defaultValue={[]}
+                defaultValue={JSON.stringify({index: null, value:""})}
                 onChange={(event) => {
-                    let obj = JSON.parse(event.target.value)
-                    console.log(obj);
+                    let obj = JSON.parse(event.target.value);
                     setGroup1Id(obj["index"]+1);
                     setGroup1Name(obj.value);
                 }}>
                 
-                <option disabled value="">Select first group</option>
+                <option disabled value={JSON.stringify({index: null, value:""})}>Select first group</option>
                 {group1Options}
             </select>
             <label htmlFor="group-2">Group 2</label>
@@ -75,15 +78,16 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 id="group-2"
                 type="text"
                 name="group2"
-                defaultValue={[]}
+                // value={JSON.stringify({index:group1Id, value:group2Name})}
+                defaultValue={JSON.stringify({index: null, value:""})}
                 onChange={(event) => {
-                    let obj = JSON.parse(event.target.value)
-                    console.log(obj);
-                    setGroup2Id(obj["index"]+1);
+                    let obj = JSON.parse(event.target.value);
                     setGroup2Name(obj.value);
+                    setGroup2Id(obj["index"]+1);
+                    console.log(group2Name);
                 }}>
                 
-                <option disabled value="">Select second group</option>
+                <option disabled value={JSON.stringify({index: null, value:""})}>Select second group</option>
                 {group2Options}
             </select>
         </form>
