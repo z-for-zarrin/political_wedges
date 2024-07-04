@@ -52,11 +52,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
     }
 
     const questionOptions = questionArray.map((questionOption, index) => {
-        if(questionOption !== question){
-            return <option key={index} value={questionOption}>{questionOption}</option>
-        } else {
-            return <option key={index} value={questionOption} disabled>{questionOption}</option>
-        }
+        return <option key={index} value={questionOption}>{questionOption}</option>
     })
 
     return(
