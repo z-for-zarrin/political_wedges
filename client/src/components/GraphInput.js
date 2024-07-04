@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
-    group2Id, setGroup2Id, group2Name, setGroup2Name, question, setQuestion
-    }) => {
+    group2Id, setGroup2Id, group2Name, setGroup2Name, question, setQuestion}) => {
 
     const[groupKey, setGroupKey] = useState("");
     const[groupArray, setGroupArray] = useState([]);
+    const[questionArray, setQuestionArray] = useState([]);
     
     const characteristics = {
         ageCat:   ["18-34", "35-54", "55+"],
@@ -14,6 +14,11 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                    "Plaid Cymru", "Green", "UKIP", "Reform"],
          SRInc:   ["Identify as high income", "Idenitfy as middle income", "Identify as low income"],
       hedqual2:   ["Degree", "No degree"]
+    }
+
+    const topics = {
+        healthcare: ["question", "question 2"],
+        secondTopic: ["question 3", "inquiry"]
     }
 
     const charChangeHandler = (event) => {
@@ -40,6 +45,19 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
             return <option key={index} value={group} disabled>{group}</option>
         }
     });
+
+    const topicChangeHandler = (event) => {
+        setQuestionArray(topics[`${event.target.value}`]);
+        setQuestion("");
+    }
+
+    const questionOptions = questionArray.map((questionOption, index) => {
+        if(questionOption !== question){
+            return <option key={index} value={questionOption}>{questionOption}</option>
+        } else {
+            return <option key={index} value={questionOption} disabled>{questionOption}</option>
+        }
+    })
 
     return(
         <form id="parameters-form">
@@ -89,6 +107,30 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 
                 <option disabled value={JSON.stringify({index: null, value:""})}>Select second group</option>
                 {group2Options}
+            </select>
+            <label htmlFor="topic-select">Characteristic</label>
+            <select
+                id="topic-select"
+                type="text"
+                name="topic"
+                defaultValue=""
+                onChange={topicChangeHandler}>
+                
+                <option disabled value="">Select topic</option>
+                <option value="healthcare">Healthcare</option>
+            </select>
+            <label htmlFor="question">Question</label>
+            <select
+                id="question-select"
+                type="text"
+                name="question"
+                defaultValue=""
+                onChange={(event) => {
+                    setQuestion(event.target.value);
+                }}>
+                
+                <option disabled value="">Select question</option>
+                {questionOptions}
             </select>
         </form>
     )
