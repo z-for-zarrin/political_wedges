@@ -1,6 +1,6 @@
 header{
-  color: darkblue;
-  background-color: aliceblue;
+  color: #00008b;
+  background-color: #f0f8ff;
   padding: 10px;
 }
 
@@ -13,7 +13,7 @@ nav > ul{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: powderblue;
+  background-color: #b0e0e6;
 }
 
 .nav-item{
@@ -30,10 +30,20 @@ nav > ul{
 }
 
 .nav-item:hover{
-  background-color: rgb(57, 202, 222);
+  background-color: #F6C445;
   font-weight: 500;
+}
+
+body{
+  background-color: #f0f8ff;
 }
 
 .page{
   margin: 20px;
 }
+
+/* dark blue: #00008b,
+  pale blue: #f0f8ff,
+  yellow: #F6C445,
+  red: #e45f2b,
+  light blue: #b0e0e6 */
