@@ -1,6 +1,6 @@
 #parameters-form{
     display: grid;
-    grid-template: 50% 50% / repeat(8, 1fr)
+    grid-template: 50% 50% / repeat(8, 1fr);
 }
 
 #topic-label{
