@@ -94,6 +94,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
     const topicChangeHandler = (event) => {
         setQuestionArray(topics[`${event.target.value}`]);
         setQuestion("");
+        document.getElementById("question-select").value = "";
     }
 
     const questionOptions = questionArray.map((questionOption, index) => {
@@ -149,7 +150,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 {group2Options}
             </select>
             <br />
-            <label htmlFor="topic-select">Characteristic</label>
+            <label htmlFor="topic-select">Topic</label>
             <select
                 id="topic-select"
                 type="text"
