@@ -2,10 +2,16 @@ header{
   color: darkblue;
   background-color: aliceblue;
   padding: 10px;
+  display: flex;
 }
 
 h1{
   margin: 10px;
+}
+
+#logo{
+  max-height: 5%;
+  max-width: 5%;  
 }
 
 nav > ul{
