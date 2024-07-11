@@ -4,6 +4,7 @@ import GraphContainer from './containers/GraphContainer.js';
 import About from './components/About.js';
 import Explanation from './components/Explanation.js';
 import Navigation from './components/Navigation.js';
+import NotFound from './components/NotFound.js';
 
 function App() {
 
@@ -23,6 +24,10 @@ function App() {
             {
                 path: "/about-us",
                 element: <About />
+            },
+            {
+                path: "*",
+                element: <NotFound />
             }
       ]
     }
