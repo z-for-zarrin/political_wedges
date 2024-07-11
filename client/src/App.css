@@ -1,6 +1,11 @@
 header{
   color: darkblue;
-  margin-left: 10px;
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+h1{
+  margin: 10px;
 }
 
 nav > ul{
