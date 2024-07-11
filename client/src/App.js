@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       <header className="header">
-        <h1>Wedgesite</h1>
+        <h1>Political Wedges</h1>
       </header>
       <RouterProvider router={wedgeRoutes} />
     </>

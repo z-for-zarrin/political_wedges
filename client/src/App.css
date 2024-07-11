@@ -8,11 +8,13 @@ nav > ul{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: plum;
+  background-color: powderblue;
 }
 
 .nav-item{
   float: left;
+  width: 125px;
+  text-align: center;
 }
 
 .nav-item a:link, a:visited{
@@ -23,7 +25,8 @@ nav > ul{
 }
 
 .nav-item:hover{
-  background-color: rgb(222, 115, 222);
+  background-color: rgb(57, 202, 222);
+  font-weight: 500;
 }
 
 section{
