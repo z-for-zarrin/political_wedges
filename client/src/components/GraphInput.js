@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../styles/GraphStyle.css';
 
 const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
     group2Id, setGroup2Id, group2Name, setGroup2Name, question, setQuestion}) => {
@@ -148,8 +149,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 <option disabled value={JSON.stringify({index: null, value:""})}>Select second group</option>
                 {group2Options}
             </select>
-            <br />
-            <label htmlFor="topic-select">Topic</label>
+            <label htmlFor="topic-select" id="topic-label">Topic</label>
             <select
                 id="topic-select"
                 type="text"
@@ -169,7 +169,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 <option value="workplaces">Workplaces</option>
                 <option value="misc">Miscellaneous</option>
             </select>
-            <label htmlFor="question">Question</label>
+            <label htmlFor="question" id="question-label">Question</label>
             <select
                 id="question-select"
                 type="text"
