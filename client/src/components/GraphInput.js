@@ -1,8 +1,7 @@
 import { useState } from "react";
 import '../styles/GraphStyle.css';
 
-const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
-    group2Id, setGroup2Id, group2Name, setGroup2Name, question, setQuestion}) => {
+const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, setQuestion}) => {
 
     const[groupKey, setGroupKey] = useState("");
     const[groupArray, setGroupArray] = useState([]);
@@ -69,10 +68,8 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
         setGroupArray(characteristics[`${event.target.value}`]);
         setGroupKey(event.target.value);
         setGroup1Id(0);
-        setGroup1Name("");
         document.getElementById("group-1").value=JSON.stringify({index: null, value:""});
         setGroup2Id(0);
-        setGroup2Name("");
         document.getElementById("group-2").value=JSON.stringify({index: null, value:""});
     }
 
@@ -128,7 +125,6 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 onChange={(event) => {
                     let obj = JSON.parse(event.target.value);
                     setGroup1Id(obj["index"]+1);
-                    setGroup1Name(obj.value);
                 }}>
                 
                 <option disabled value={JSON.stringify({index: null, value:""})}>Select first group</option>
@@ -142,9 +138,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 defaultValue={JSON.stringify({index: null, value:""})}
                 onChange={(event) => {
                     let obj = JSON.parse(event.target.value);
-                    setGroup2Name(obj.value);
                     setGroup2Id(obj["index"]+1);
-                    console.log(group2Name);
                 }}>
                 
                 <option disabled value={JSON.stringify({index: null, value:""})}>Select second group</option>

@@ -1,6 +1,6 @@
 const Explanation = () => {
     return(
-        <section>
+        <section className="page">
             About the measure
         </section>
     );
