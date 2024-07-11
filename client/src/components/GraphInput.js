@@ -21,8 +21,10 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
         setGroupKey(event.target.value);
         setGroup1Id(0);
         setGroup1Name("");
+        document.getElementById("group-1").value=JSON.stringify({index: null, value:""});
         setGroup2Id(0);
         setGroup2Name("");
+        document.getElementById("group-2").value=JSON.stringify({index: null, value:""});
     }
 
     const group1Options = groupArray.map((group, index) => {
@@ -78,7 +80,6 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 id="group-2"
                 type="text"
                 name="group2"
-                // value={JSON.stringify({index:group1Id, value:group2Name})}
                 defaultValue={JSON.stringify({index: null, value:""})}
                 onChange={(event) => {
                     let obj = JSON.parse(event.target.value);
