@@ -149,7 +149,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
                 {group2Options}
             </select>
             <br />
-            <label htmlFor="topic-select">Characteristic</label>
+            <label htmlFor="topic-select">Topic</label>
             <select
                 id="topic-select"
                 type="text"
