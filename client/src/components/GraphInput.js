@@ -95,6 +95,7 @@ const GraphInput = ({group1Id, setGroup1Id, group1Name, setGroup1Name,
     const topicChangeHandler = (event) => {
         setQuestionArray(topics[`${event.target.value}`]);
         setQuestion("");
+        document.getElementById("question-select").value = "";
     }
 
     const questionOptions = questionArray.map((questionOption, index) => {
