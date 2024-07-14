@@ -1,7 +1,7 @@
 import { useState } from "react";
 import '../styles/GraphStyle.css';
 
-const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, setQuestion}) => {
+const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, setQuestion, postGraph}) => {
 
     const[groupKey, setGroupKey] = useState("");
     const[groupArray, setGroupArray] = useState([]);
@@ -13,27 +13,27 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
        partyfw:   ["Conservative", "Labour", "Liberal Democrats", "Scottish National Party",
                    "Plaid Cymru", "Green", "UKIP", "Reform"],
          SRInc:   ["Identify as high income", "Idenitfy as middle income", "Identify as low income"],
-      hedqual2:   ["Degree", "No degree"]
+      HigherEd:   ["Degree", "No degree"]
     }
 
     const topics = {
         britishValues:      ["On a scale of 1 to 7, with 1 being ‘not at all British’, and 7 ‘being very strongly British’, to what extent do you think of yourself as British?",
-                             "The world would be a better place if people from other countries were more like the British",
-                             "Generally speaking, Britain is a better country than most other countries",
-                             "Young people today don't have enough respect for traditional British values"],
-        economics:          ['Overall, it is worthwhile for me to save into a private pension?',
-                             'Government should redistribute income from the better-off to those who are less well off',
-                             'Big business benefits owners at the expense of workers',
-                             "Ordinary working people do not get their fair share of the nation's wealth",
-                             'There is one law for the rich and one for the poor',
-                             'Management will always try to get the better of employees if it gets the chance'],
+                             "'The world would be a better place if people from other countries were more like the British'",
+                             "'Generally speaking, Britain is a better country than most other countries'",
+                             "'Young people today don't have enough respect for traditional British values'"],
+        economics:          ["'Overall, it is worthwhile for me to save into a private pension'",
+                             "'Government should redistribute income from the better-off to those who are less well off'",
+                             "'Big business benefits owners at the expense of workers'",
+                             "'Ordinary working people do not get their fair share of the nation's wealth'",
+                             "'There is one law for the rich and one for the poor'",
+                             "'Management will always try to get the better of employees if it gets the chance'"],
         genSexMinorites:   ["If a man and woman have sexual relations before marriage, what would your general opinion be?",
                              "Opinions on sexual relations between two adults of the same sex",
                              "How much do you agree or disagree that a person who is transgender should be able to have the sex recorded on their birth certificate changed if they want?"],
         governance:         ["On a score of 0-10 how much do you personally trust Britain's legal system?*",
                              "On a score of 0-10 how much do you personally trust Britain's Police*",
                              "On a score of 0-10 how much do you personally trust Britain's Politicans?*",
-                             "Now that Scotland has its own parliament, Scottish MP’s should no longer be allowed to vote in the House of commons on laws that only affect England"],
+                             "'Now that Scotland has its own parliament, Scottish MP’s should no longer be allowed to vote in the House of commons on laws that only affect England'"],
         healthcare:         [],
         housingUrban:       ["Would you support or oppose more homes being built in your local area?",
                              "To what extent would you support or oppose requiring people in existing buildings to make changes to their homes to meet new energy regulations, should new homes be built in that area?*",           
@@ -43,19 +43,19 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                              "To what extent are you in favour of, or against, building carparks to introduce more “park and ride” routes being introduced in your area?*",           
                              "To what extent are you in favour of, or against, narrowing roads to widen pavements being introduced in your area?*",           
                              "To what extent are you in favour of, or against, closing roads to create pedestrian high streets being introduced in your area?*"],
-        law:                ["People who break the law should be given stiffer sentences",
-                             "For some crimes, the death penalty is the most appropriate sentence",
-                             "Schools should teach children to obey authority",
-                             "The law should always be obeyed, even if a particular law is wrong",
-                             "Censorship of films and magazines is necessary to uphold moral standards"],
-        welfare:            ["Around here, most unemployed people could find a job if they really wanted one",
-                             "Many people who get social security don't really deserve any help",
-                             "Most people on the dole are fiddling in one way or another",
-                             "If welfare benefits weren't so generous, people would learn to stand on their own two feet",
-                             "The welfare state encourages people to stop helping each other",
-                             "The government should spend more money on welfare benefits for the poor, even if it leads to higher taxes",
-                             "Cutting welfare benefits would damage too many people's lives",
-                             "The creation of the welfare state is one of Britain's proudest achievements"],
+        law:                ["'People who break the law should be given stiffer sentences'",
+                             "'For some crimes, the death penalty is the most appropriate sentence'",
+                             "'Schools should teach children to obey authority'",
+                             "'The law should always be obeyed, even if a particular law is wrong'",
+                             "'Censorship of films and magazines is necessary to uphold moral standards'"],
+        welfare:            ["'Around here, most unemployed people could find a job if they really wanted one'",
+                             "'Many people who get social security don't really deserve any help'",
+                             "'Most people on the dole are fiddling in one way or another'",
+                             "'If welfare benefits weren't so generous, people would learn to stand on their own two feet'",
+                             "'The welfare state encourages people to stop helping each other'",
+                             "'The government should spend more money on welfare benefits for the poor, even if it leads to higher taxes'",
+                             "'Cutting welfare benefits would damage too many people's lives'",
+                             "'The creation of the welfare state is one of Britain's proudest achievements'"],
         workplaces:         ["Have attempts to give people with physical impairments an equal chance in the workplace gone too far or not far enough?",
                              "Have attempts to give people with mental health conditions an equal chance in the workplace gone too far or not far enough?",
                              "How strongly do you agree or disagree that, in principle, someone who has been off work with a back problem going back to work quickly will help speed their recovery?*",
@@ -99,8 +99,26 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
         return <option key={index} value={questionOption}>{questionOption}</option>
     })
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        let parameters = {
+            groupVar: groupKey,
+            group1Value: group1Id,
+            group2Value: group2Id,
+            question: question
+        }
+        postGraph(parameters);
+        // document.getElementById("parameters-form").reset();
+        // setGroup1Id(0);
+        // setGroup2Id(0);
+        // setQuestion("");
+        // setGroupKey("");
+        // setGroupArray([]);
+        // setQuestionArray([]);
+    }
+
     return(
-        <form id="parameters-form">
+        <form id="parameters-form" onSubmit={handleSubmit}>
             <label htmlFor="characteristic-select">Characteristic</label>
             <select
                 id="characteristic-select"
@@ -114,7 +132,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 <option value="ageCat">Age</option>
                 <option value="DVSex21">Sex</option>
                 <option value="SRInc">Income</option>
-                <option value="hedqual2">University Education</option>
+                <option value="HigherEd">University Education</option>
             </select>
             <label htmlFor="group-1">Group 1</label>
             <select
@@ -177,6 +195,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 <option disabled value="">Select question</option>
                 {questionOptions}
             </select>
+            <input type="submit" value="Generate"/>
         </form>
     )
 }
