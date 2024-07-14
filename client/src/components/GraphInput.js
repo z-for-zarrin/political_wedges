@@ -13,7 +13,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
        partyfw:   ["Conservative", "Labour", "Liberal Democrats", "Scottish National Party",
                    "Plaid Cymru", "Green", "UKIP", "Reform"],
          SRInc:   ["Identify as high income", "Idenitfy as middle income", "Identify as low income"],
-      hedqual2:   ["Degree", "No degree"]
+      HigherEd:   ["Degree", "No degree"]
     }
 
     const topics = {
@@ -132,7 +132,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 <option value="ageCat">Age</option>
                 <option value="DVSex21">Sex</option>
                 <option value="SRInc">Income</option>
-                <option value="hedqual2">University Education</option>
+                <option value="HigherEd">University Education</option>
             </select>
             <label htmlFor="group-1">Group 1</label>
             <select
