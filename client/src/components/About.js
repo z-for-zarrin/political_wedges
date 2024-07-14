@@ -11,8 +11,8 @@ const About = () => {
                     degree from the University of Warwick, Warwickshire, Zarrin has turned
                     her eyes to tech for the next step in her journey. Since graduating,
                     she has completed a bootcamp run by the Bright Network Technology Academy,
-                    where she learnt about full-stack software development – including the
-                    knowledge necessary for building this very project! When she’s not tapping
+                    where she learnt about full-stack software development — including the
+                    knowledge necessary for building this very project! When she's not tapping
                     away at the laptop, you can find Zarrin playing guitar, getting lost in
                     the woods or farming her time away in Stardew Valley.</p>
             </section>
