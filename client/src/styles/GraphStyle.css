@@ -1,6 +1,10 @@
 #parameters-form{
     display: grid;
     grid-template: 50% 50% / repeat(8, 1fr);
+    background-color: #b0e0e6;
+    border-radius: 10px;
+    height: 100px;
+    padding: 20px 1em 15px 0;
 }
 
 #topic-label{
@@ -22,8 +26,10 @@
 select{
     margin-left: 5px;
     margin-bottom: 10px;
+    background-color: #f0f8ff;
 }
 
 label{
     text-align: right;
+    padding-top: 5px;
 }
