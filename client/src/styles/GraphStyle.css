@@ -1,6 +1,14 @@
+#parameter-explainer{
+    padding-bottom: 15px;
+}
+
 #parameters-form{
     display: grid;
     grid-template: 37.5% 37.5% 25% / repeat(8, 1fr);
+    background-color: #b0e0e6;
+    border-radius: 10px;
+    height: 160px;
+    padding: 20px 1em 15px 0;
 }
 
 #topic-label{
@@ -19,23 +27,44 @@
     grid-area: 2 / 4 / 3 / -1;
 }
 
-input{
-    grid-row-start: 3;
-}
-
 select{
     margin-left: 5px;
-    margin-bottom: 10px;
+    background-color: #f0f8ff;
+    height: 30px;
 }
 
 label{
     text-align: right;
+    padding-top: 3px;
+}
+
+input{
+    grid-row-start: 3;
+    grid-column: -3 / -1;
+    background-color: #f6c445;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.1s;
+    height: 2em;
+}
+
+input:hover{
+    cursor: pointer;
+    background-color: #f2b51b;
+}
+
+input:active{
+    grid-row-start: 3;
+    margin-left: 1em;
+    background-color: #e45f2b;
+    border: none;
 }
 
 #graph{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     border-radius: 20px;
     width: 65%;
     height: auto;
