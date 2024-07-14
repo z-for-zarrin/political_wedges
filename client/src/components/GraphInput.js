@@ -195,7 +195,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 <option disabled value="">Select question</option>
                 {questionOptions}
             </select>
-            <input type="submit"/>
+            <input type="submit" value="Generate"/>
         </form>
     )
 }
