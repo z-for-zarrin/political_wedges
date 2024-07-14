@@ -21,7 +21,9 @@ const GraphContainer = () => {
 
     return (
         <section className='page'>
-            Make a graph!
+            <section id='parameter-explainer'>
+                Make a graph!
+            </section>
             <GraphInput
                 group1Id={group1Id}
                 setGroup1Id={setGroup1Id}
