@@ -10,8 +10,8 @@ h1{
 }
 
 #logo{
-  max-height: 5%;
-  max-width: 5%;  
+  width: 70px;
+  height: auto; 
 }
 
 nav > ul{

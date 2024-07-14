@@ -1,6 +1,6 @@
 #parameters-form{
     display: grid;
-    grid-template: 50% 50% / repeat(8, 1fr);
+    grid-template: 37.5% 37.5% 25% / repeat(8, 1fr);
 }
 
 #topic-label{
@@ -19,6 +19,10 @@
     grid-area: 2 / 4 / 3 / -1;
 }
 
+input{
+    grid-row-start: 3;
+}
+
 select{
     margin-left: 5px;
     margin-bottom: 10px;
@@ -26,4 +30,11 @@ select{
 
 label{
     text-align: right;
+}
+
+#graph{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
