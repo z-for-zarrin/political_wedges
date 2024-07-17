@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Graph from "../components/Graph";
 import GraphInput from "../components/GraphInput";
 
 const GraphContainer = () => {
