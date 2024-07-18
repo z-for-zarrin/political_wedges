@@ -36,6 +36,10 @@ function App() {
         <img src={logo} alt='logo' id='logo'/>
       </header>
       <RouterProvider router={wedgeRoutes} />
+      <footer>
+        <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Fathema Khanom - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+      </footer>
     </>
   );
 }

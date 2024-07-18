@@ -1,0 +1,19 @@
+.profile > h3{
+    color: #000065;
+}
+
+.profile > p{
+  line-height: 2em;
+}
+
+sup{
+  vertical-align: top;
+  position: relative;
+  top: -0.3em;
+}
+
+.link-icon{
+    height: 40px;
+    width: auto;
+    margin-right: 2em;
+}

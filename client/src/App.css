@@ -48,15 +48,8 @@ body{
   margin: 20px;
 }
 
-.profile > p{
-  line-height: 2em;
-}
-
-sup{
-  vertical-align: top;
-  position: relative;
-  top: -0.3em;
-  /* font-size: 0.6em; */
+footer{
+  text-align: center;
 }
 
 /* dark blue: #00008b,

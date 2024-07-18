@@ -1,3 +1,7 @@
+import '../styles/AboutStyle.css';
+import linkedinIcon from '../assets/linkedin.png';
+import githubIcon from '../assets/github.png';
+
 const About = () => {
     return(
         <section className="page">
@@ -14,8 +18,14 @@ const About = () => {
                     a professor who accused him of having 'chicken issues'. He is always up for
                     a detailed conversation on the best places to find chicken wings (and once
                     created a chicken wing tier list data set from his friend group after a
-                    'Chicken Crawl'), but will happy also talk to you about 3D <i>Zelda</i> or
-                    <i>Mario</i> titles, murder mysteries, or 20<sup>th</sup> century jazz pianists.</p>
+                    'Chicken Crawl'), but will happy also talk to you about 3D <i>Zelda</i> or 
+                    <i> Mario</i> titles, murder mysteries, or 20<sup>th</sup> century jazz pianists.</p>
+                <a href='https://www.linkedin.com/in/joseph-joey-cartwright-13b4b31b6/?originalSubdomain=uk'>
+                    <img className='link-icon' src={linkedinIcon} alt="link to Joey's linkedin profile" />
+                </a>
+                <a href='https://github.com/JoeysPouch'>
+                    <img className='link-icon' src={githubIcon} alt="link to Joey's github profile" />
+                </a>
             </section>
             <section className="profile">
                 <h3>Zarrin Rahman — Frontend Developer</h3>
@@ -31,6 +41,12 @@ const About = () => {
                     away at the laptop, you can find Zarrin playing guitar, getting lost in
                     the woods or farming her time away in Stardew Valley. Please direct all webdev
                     queries and cat pictures to her.</p>
+                <a href='https://www.linkedin.com/in/zarrin-rahman'>
+                    <img className='link-icon' src={linkedinIcon} alt="link to Zarrin's linkedin profile" />
+                </a>
+                <a href='https://github.com/z-for-zarrin'>
+                    <img className='link-icon' src={githubIcon} alt="link to Zarrin's github profile" />
+                </a>
             </section>
         </section>
     );
