@@ -8,7 +8,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
     const[questionArray, setQuestionArray] = useState([]);
     
     const characteristics = {
-        ageCat:   ["18-34", "35-54", "55+"],
+      AgeGroup:   ["18-34", "35-54", "55+"],
        DVSex21:   ["Female", "Male"],
        partyfw:   ["Conservative", "Labour", "Liberal Democrats", "Scottish National Party",
                    "Plaid Cymru", "Green", "UKIP", "Reform"],
@@ -20,21 +20,25 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
         britishValues:      ["On a scale of 1 to 7, with 1 being ‘not at all British’, and 7 ‘being very strongly British’, to what extent do you think of yourself as British?",
                              "'The world would be a better place if people from other countries were more like the British'",
                              "'Generally speaking, Britain is a better country than most other countries'",
-                             "'Young people today don't have enough respect for traditional British values'"],
+                             "'Young people today don't have enough respect for traditional British values'",
+                             "How important do you think being born in britain is for being truly british?*",
+                             "How important do you think having british ancestry is for being truly british?*",
+                             "How important do you think feeling british is for being truly british?*",
+                             "Would you say that Britain's cultural life is generally undermined or enriched by migrants coming to live here from other countries?"],
+        class:              ["How wide are the differences between social classes in this country, do you think?",
+                             "How difficult would you say it is for people to move from one class to another?",
+                             "Do you think [social class] differences have become greater or less or have remained about the same?*"],
         economics:          ["'Overall, it is worthwhile for me to save into a private pension'",
                              "'Government should redistribute income from the better-off to those who are less well off'",
                              "'Big business benefits owners at the expense of workers'",
                              "'Ordinary working people do not get their fair share of the nation's wealth'",
                              "'There is one law for the rich and one for the poor'",
-                             "'Management will always try to get the better of employees if it gets the chance'"],
-        genSexMinorites:   ["If a man and woman have sexual relations before marriage, what would your general opinion be?",
+                             "'Management will always try to get the better of employees if it gets the chance'",
+                             "Would you say it is generally bad or good for Britain's economy that migrants come to Britain from other countries?"],
+        genSexMinorites:    ["If a man and woman have sexual relations before marriage, what would your general opinion be?",
                              "Opinions on sexual relations between two adults of the same sex",
                              "How much do you agree or disagree that a person who is transgender should be able to have the sex recorded on their birth certificate changed if they want?"],
-        governance:         ["On a score of 0-10 how much do you personally trust Britain's legal system?*",
-                             "On a score of 0-10 how much do you personally trust Britain's Police*",
-                             "On a score of 0-10 how much do you personally trust Britain's Politicans?*",
-                             "'Now that Scotland has its own parliament, Scottish MP’s should no longer be allowed to vote in the House of commons on laws that only affect England'"],
-        healthcare:         [],
+        healthcare:         ["Please say what you think overall about the state of health services in Britain nowadays"],
         housingUrban:       ["Would you support or oppose more homes being built in your local area?",
                              "To what extent would you support or oppose requiring people in existing buildings to make changes to their homes to meet new energy regulations, should new homes be built in that area?*",           
                              "To what extent are you in favour of, or against, new cycle lanes in roads being introduced in your area?*",           
@@ -55,9 +59,19 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                              "'The welfare state encourages people to stop helping each other'",
                              "'The government should spend more money on welfare benefits for the poor, even if it leads to higher taxes'",
                              "'Cutting welfare benefits would damage too many people's lives'",
-                             "'The creation of the welfare state is one of Britain's proudest achievements'"],
+                             "'The creation of the welfare state is one of Britain's proudest achievements'",
+                             "Would you like to see more or less government spending on [benefits for unemployed people] than now?*",
+                             "Would you like to see more or less government spending on [benefits for disabled people who cannot work] than now?*",
+                             "Would you like to see more or less government spending on [benefits for parents who work on very low incomes] than now?*",
+                             "Would you like to see more or less government spending on [single parents] than now?*",
+                             "Would you like to see more or less government spending on [retired people] than now?*",
+                             "Would you like to see more or less government spending on [carers for those who are sick or disabled] than now?*"],
         workplaces:         ["Have attempts to give people with physical impairments an equal chance in the workplace gone too far or not far enough?",
                              "Have attempts to give people with mental health conditions an equal chance in the workplace gone too far or not far enough?",
+                             "Do you think attempts to give equal opportunities have gone too far or not gone far enough for LGB people?*",
+                             "Do you think attempts to give equal opportunities have gone too far or not gone far enough for transgender people?*",
+                             "Do you think attempts to give equal opportunities have gone too far or not gone far enough for women?*",
+                             "Do you think attempts to give equal opportunities have gone too far or not gone far enough for black and asian people?*",
                              "How strongly do you agree or disagree that, in principle, someone who has been off work with a back problem going back to work quickly will help speed their recovery?*",
                              "How strongly do you agree or disagree that, in principle, someone who has been off work with depression going back to work quickly will help speed their recovery?*"],
         misc:               ["To what extent would you say that online and mobile communication undermines personal privacy?",
@@ -108,13 +122,6 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
             question: question
         }
         postGraph(parameters);
-        // document.getElementById("parameters-form").reset();
-        // setGroup1Id(0);
-        // setGroup2Id(0);
-        // setQuestion("");
-        // setGroupKey("");
-        // setGroupArray([]);
-        // setQuestionArray([]);
     }
 
     return(
@@ -129,7 +136,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 
                 <option disabled value="">Select demographic characteristic</option>
                 <option value="partyfw">Party Preference</option>
-                <option value="ageCat">Age</option>
+                <option value="AgeGroup">Age</option>
                 <option value="DVSex21">Sex</option>
                 <option value="SRInc">Income</option>
                 <option value="HigherEd">University Education</option>
@@ -172,9 +179,9 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 
                 <option disabled value="">Select topic</option>
                 <option value="britishValues">British Values and Traditions</option>
+                <option value="class">Class</option>
                 <option value="economics">Finance and Economics</option>
                 <option value="genSexMinorites">Gender and Sexual Minorities</option>
-                <option value="governance">Governance</option>
                 <option value="healthcare">Health and Social Care</option>
                 <option value="housingUrban">Housing and Urban Development</option>
                 <option value="law">Law and Order</option>
