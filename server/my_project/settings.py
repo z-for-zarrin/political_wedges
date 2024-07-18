@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-sed_kv*h*yocqjg&%uw+7ec@*0pv1y7%$(4!-kc+b!xjveb$e9
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '192.168.1.127', 'localhost', '127.0.0.1', '192.168.1.166']
+    'the-politics-wedgesite.herokuapp.com',
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
