@@ -1,4 +1,7 @@
 import explanationPDF from '../assets/Parallelogram-Description-And-Proofs.pdf';
+import redistribution from '../assets/Redist.png';
+import RPFairShare from '../assets/RP Fair Share.png';
+import RPDeathPenalty from '../assets/RP Death Penalty.png';
 
 const Explanation = () => {
     return(
@@ -40,6 +43,8 @@ const Explanation = () => {
                 questions to choose from! One you've picked, a graph will be generated that will tell you about
                 how and to what extent those two groups in society differ in opinion.
             </p>
+            <img src={redistribution} alt='A polarisation parallelogram that compares the views of labour and conservative leaners on
+            the issue of resditriburing income'/>
             <p>
                 Look at the two lines here, for example, on the question 'Government should redistribute
                 income from the better-off to those who are less well off'. You can see that, at the point of
@@ -88,9 +93,16 @@ const Explanation = () => {
                 might ask 'do citizens with vs without a degree have a higher polarisation score on <i>this</i>
                 issue or <i>that</i> one?' The number you see in the middle isn't as much use on its own as it is
                 when compared with other issues or groups that interest you. 
+            </p>
+            <img src={RPFairShare} alt="A polarisation parallelogram that compares the views of high and low income people on
+            the whether workers get their fair share of the nation's wealth"/>
+            <img src={RPDeathPenalty} alt='A polarisation parallelogram that compares the views of high and low income people on the issue of
+            the death penalty' />
+            <p>
                 For example, it surprised me that the rich and the poor tended to be more polarised on issues
                 relating to law and order, values and traditions than on issues related to economic equality - which
                 one might intuitively think would be more relevant to those two groups.
+            
             </p>
             <p>
                 But my goal isn't to tell you what to think about what you find! I just hoped to make a tool that might make you learn something interesting about our society and how it thinks. What you make of those results is where your own inner social scientist comes in.
