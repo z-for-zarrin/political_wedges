@@ -122,13 +122,6 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
             question: question
         }
         postGraph(parameters);
-        // document.getElementById("parameters-form").reset();
-        // setGroup1Id(0);
-        // setGroup2Id(0);
-        // setQuestion("");
-        // setGroupKey("");
-        // setGroupArray([]);
-        // setQuestionArray([]);
     }
 
     return(
