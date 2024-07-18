@@ -30,10 +30,6 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
         genSexMinorites:   ["If a man and woman have sexual relations before marriage, what would your general opinion be?",
                              "Opinions on sexual relations between two adults of the same sex",
                              "How much do you agree or disagree that a person who is transgender should be able to have the sex recorded on their birth certificate changed if they want?"],
-        governance:         ["On a score of 0-10 how much do you personally trust Britain's legal system?*",
-                             "On a score of 0-10 how much do you personally trust Britain's Police*",
-                             "On a score of 0-10 how much do you personally trust Britain's Politicans?*",
-                             "'Now that Scotland has its own parliament, Scottish MP’s should no longer be allowed to vote in the House of commons on laws that only affect England'"],
         healthcare:         [],
         housingUrban:       ["Would you support or oppose more homes being built in your local area?",
                              "To what extent would you support or oppose requiring people in existing buildings to make changes to their homes to meet new energy regulations, should new homes be built in that area?*",           
@@ -174,7 +170,6 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 <option value="britishValues">British Values and Traditions</option>
                 <option value="economics">Finance and Economics</option>
                 <option value="genSexMinorites">Gender and Sexual Minorities</option>
-                <option value="governance">Governance</option>
                 <option value="healthcare">Health and Social Care</option>
                 <option value="housingUrban">Housing and Urban Development</option>
                 <option value="law">Law and Order</option>
