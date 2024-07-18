@@ -1,6 +1,6 @@
 import '../styles/ExplanationStyle.css';
 import explanationPDF from '../assets/Parallelogram-Description-And-Proofs.pdf';
-import redistribution from '../assets/redist.png';
+import redistribution from '../assets/Redist.png';
 import RPFairShare from '../assets/ordpeople.png';
 import RPDeathPenalty from '../assets/deathpen.png';
 

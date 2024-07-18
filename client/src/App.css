@@ -5,13 +5,8 @@ header{
   display: flex;
 }
 
-h1{
-  margin: 10px;
-}
-
 #logo{
-  width: 70px;
-  height: auto; 
+  height: 125px;
 }
 
 nav > ul{
