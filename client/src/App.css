@@ -48,6 +48,10 @@ body{
   margin: 20px;
 }
 
+footer{
+  text-align: center;
+}
+
 /* dark blue: #00008b,
   pale blue: #f0f8ff,
   yellow: #F6C445,
