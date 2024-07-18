@@ -136,7 +136,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 
                 <option disabled value="">Select demographic characteristic</option>
                 <option value="partyfw">Party Preference</option>
-                <option value="ageCat">Age</option>
+                <option value="AgeGroup">Age</option>
                 <option value="DVSex21">Sex</option>
                 <option value="SRInc">Income</option>
                 <option value="hedqual2">University Education</option>
