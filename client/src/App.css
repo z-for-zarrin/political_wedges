@@ -48,6 +48,17 @@ body{
   margin: 20px;
 }
 
+.profile > p{
+  line-height: 2em;
+}
+
+sup{
+  vertical-align: top;
+  position: relative;
+  top: -0.3em;
+  /* font-size: 0.6em; */
+}
+
 /* dark blue: #00008b,
   pale blue: #f0f8ff,
   yellow: #F6C445,
