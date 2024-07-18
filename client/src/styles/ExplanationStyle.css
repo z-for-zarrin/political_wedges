@@ -1,0 +1,50 @@
+#how-it-works{
+    margin-left: 150px;
+    margin-right: 150px;
+    line-height: 2em;
+}
+
+#how-it-works img{
+    border-radius: 15px;
+}
+
+#pdf-box{
+    background-color: #b0e0e6;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#pdf-link{
+    text-decoration: none;
+    font-weight: 700;
+    color: #00008b;
+}
+
+#pdf-link:hover{
+    color: #e45f2b;
+}
+
+#example-1{
+    float: left;
+    margin: 20px;
+    height: 450px;
+    width: auto;
+}
+
+#example-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#example-2{
+    margin: 20px;
+    height: 400px;
+    width: auto;
+}
+
+#example-3{
+    margin: 20px;
+    height: 400px;
+    width: auto;
+}
