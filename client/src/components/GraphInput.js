@@ -8,7 +8,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
     const[questionArray, setQuestionArray] = useState([]);
     
     const characteristics = {
-        ageCat:   ["18-34", "35-54", "55+"],
+      AgeGroup:   ["18-34", "35-54", "55+"],
        DVSex21:   ["Female", "Male"],
        partyfw:   ["Conservative", "Labour", "Liberal Democrats", "Scottish National Party",
                    "Plaid Cymru", "Green", "UKIP", "Reform"],
