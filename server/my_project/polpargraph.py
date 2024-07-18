@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
-from scipy.stats import ttest_ind
+import statsmodels.api as sm
 
 
 list_of_topics = ["Finance and Economics", "Workplaces", "Housing and Urban Development", "Gender and Sexual Minorities", 
@@ -74,7 +74,7 @@ colour_dic = {
     }
 }
 
-
+# Question name: (Variable name, scale index, topic index)
 questions_dict = {
     #"Would you like to see more or less government spending on [benefits for unemployed people] than now?*": ("SOCSPND1", 14, 5),
     #"Would you like to see more or less government spending on [benefits for disabled people who cannot work] than now?*": ("SOCSPND2", 14, 5),
@@ -260,7 +260,7 @@ def pol_lambda(group_var, group_1_value, group_2_value, issue_var):
 # Tests the statistical significance of lamda
 def lambda_test(group_var, group_1_value, group_2_value, issue_var):
     arrays = group_arrays(group_var, group_1_value, group_2_value, issue_var)
-    p_value = ttest_ind(arrays[0], arrays[1])[1]
+    p_value = sm.stats.ttest_ind(arrays[0], arrays[1])[1]
     sig = ""
     if p_value < 0.05:
         sig += "*"
@@ -465,11 +465,12 @@ def parallelogram(group_var, group_1_value, group_2_value, question):
     plt.subplots_adjust(right=0.85)
     plt.subplots_adjust(left=0.15)
 
-    return plt
+    return plt.show()
 
 # Testing
 if __name__ == "__main__":
-    parallelogram('partyfw', 1, 2, "For some crimes, the death penalty is the most appropriate sentence")
+    parallelogram('SRInc', 1, 3, "'Ordinary working people do not get their fair share of the nation's wealth'")
+
 
     
 
