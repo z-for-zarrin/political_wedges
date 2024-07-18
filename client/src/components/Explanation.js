@@ -1,3 +1,4 @@
+import '../styles/ExplanationStyle.css';
 import explanationPDF from '../assets/Parallelogram-Description-And-Proofs.pdf';
 import redistribution from '../assets/Redist.png';
 import RPFairShare from '../assets/RP Fair Share.png';
@@ -5,10 +6,13 @@ import RPDeathPenalty from '../assets/RP Death Penalty.png';
 
 const Explanation = () => {
     return(
-        <section className="page">
+        <section className="page" id='how-it-works'>
+            <div id='pdf-box'>
             <i>For a more academic and mathematical explanation, including various semi-formal proofs,
-            you can download <a href={explanationPDF}>this pdf</a>. For those of you with social skills,
+            you can download <a id='pdf-link' href={explanationPDF}>this pdf</a>. For those of you with social skills,
             you may find the below a bit more helpful instead.</i>
+            </div>
+            
 
             <p>
                 Whenever I would read about how two different groups in society 'disagreed' on a certain
@@ -33,17 +37,17 @@ const Explanation = () => {
                 graph, and the full exact distribution of answers for each group can be easily derived. With
                 some background maths, you can do a lot more with it (and I think there are some quite
                 beautiful and surprising properties the maths nerds will appreciate), but the core only
-                requires that one piece of knowledge — bigger wedge, higher polarisation - to understand.
+                requires that one piece of knowledge — bigger wedge, higher polarisation — to understand.
             </p>
             <p>
                 In the 'Make a Graph' section of the website, you can input two societal groups of your choice
                 — perhaps people who lean towards different parties, or age groups, or degree vs non-degree
-                holders. You can then pick an issue of your choice - this could be about taxes, or healthcare,
+                holders. You can then pick an issue of your choice — this could be about taxes, or healthcare,
                 or even smaller-scale questions about things like urban planning. There's a huge variety of
                 questions to choose from! One you've picked, a graph will be generated that will tell you about
                 how and to what extent those two groups in society differ in opinion.
             </p>
-            <img src={redistribution} alt='A polarisation parallelogram that compares the views of labour and conservative leaners on
+            <img id='example-1' src={redistribution} alt='A polarisation parallelogram that compares the views of labour and conservative leaners on
             the issue of resditriburing income'/>
             <p>
                 Look at the two lines here, for example, on the question 'Government should redistribute
@@ -94,10 +98,12 @@ const Explanation = () => {
                 issue or <i>that</i> one?' The number you see in the middle isn't as much use on its own as it is
                 when compared with other issues or groups that interest you. 
             </p>
-            <img src={RPFairShare} alt="A polarisation parallelogram that compares the views of high and low income people on
-            the whether workers get their fair share of the nation's wealth"/>
-            <img src={RPDeathPenalty} alt='A polarisation parallelogram that compares the views of high and low income people on the issue of
-            the death penalty' />
+            <div id='example-box'>
+                <img id='example-2' src={RPFairShare} alt="A polarisation parallelogram that compares the views of high and low income people on
+                the whether workers get their fair share of the nation's wealth"/>
+                <img id='example-3' src={RPDeathPenalty} alt='A polarisation parallelogram that compares the views of high and low income people on the issue of
+                the death penalty' />
+            </div>
             <p>
                 For example, it surprised me that the rich and the poor tended to be more polarised on issues
                 relating to law and order, values and traditions than on issues related to economic equality - which
@@ -110,7 +116,7 @@ const Explanation = () => {
             <p>
                 So really, just have some fun with it! I haven't tried anything like every combination of issues myself, of course. It's very possible that you'll be the first person in history to ever 'create' the result that you do. And if you create a graph that looks interesting or surprises you, let me know! I'd love to hear about what you've discovered and your thoughts on it. Happy graphing!
             </p>
-            <h2>~ Joey</h2>
+            <h2><i>~ Joey</i></h2>
         </section>
     );
 }
