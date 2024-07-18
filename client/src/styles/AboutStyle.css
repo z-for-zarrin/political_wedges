@@ -17,3 +17,22 @@ sup{
     width: auto;
     margin-right: 2em;
 }
+
+.credit:link{
+    margin: 10px;
+    text-decoration: underline;
+    color: #00008b;
+}
+
+.credit:link:hover{
+    color: #e45f2b;
+}
+
+.credit:visited:hover{
+    color: #e45f2b;
+}
+
+.credit:visited{
+    margin: 10px;
+    color: #00008b;
+}

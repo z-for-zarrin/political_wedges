@@ -39,8 +39,8 @@ const About = () => {
                     where she learnt about full-stack software development — including the
                     knowledge necessary for building this very project! When she's not tapping
                     away at the laptop, you can find Zarrin playing guitar, getting lost in
-                    the woods or farming her time away in Stardew Valley. Please direct all webdev
-                    queries and cat pictures to her.</p>
+                    the woods or farming her time away in <i>Stardew Valley</i>. Please direct all
+                    website-related queries and cat pictures to her.</p>
                 <a href='https://www.linkedin.com/in/zarrin-rahman'>
                     <img className='link-icon' src={linkedinIcon} alt="link to Zarrin's linkedin profile" />
                 </a>
@@ -49,8 +49,8 @@ const About = () => {
                 </a>
             </section>
             <footer>
-                <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Fathema Khanom - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+                <a className='credit' href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Fathema Khanom - Flaticon</a>
+                <a className='credit' href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
             </footer>
         </section>
     );
