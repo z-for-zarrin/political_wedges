@@ -1,8 +1,8 @@
 import '../styles/ExplanationStyle.css';
 import explanationPDF from '../assets/Parallelogram-Description-And-Proofs.pdf';
-import redistribution from '../assets/Redist.png';
-import RPFairShare from '../assets/RP Fair Share.png';
-import RPDeathPenalty from '../assets/RP Death Penalty.png';
+import redistribution from '../assets/redist.png';
+import RPFairShare from '../assets/ordpeople.png';
+import RPDeathPenalty from '../assets/deathpen.png';
 
 const Explanation = () => {
     return(
@@ -57,7 +57,7 @@ const Explanation = () => {
                 while almost no conservatives do.
             </p>
             <p>
-                Now, follow the lines along the x axis. Once we get to 'agree' the labour number goes up to
+                Now, follow the lines along the x-axis. Once we get to 'agree' the labour number goes up to
                 just over 70%. This does not mean that 70% of labour lean respondents picked 'agree'
                 specifically — it means that 70% picked 'agree' <i>or</i> 'strongly agree'. We've gone up by around
                 thirty percentage points, so that is the percentage of respondents that answered 'agree'.
