@@ -48,6 +48,10 @@ const About = () => {
                     <img className='link-icon' src={githubIcon} alt="link to Zarrin's github profile" />
                 </a>
             </section>
+            <footer>
+                <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Fathema Khanom - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+            </footer>
         </section>
     );
 }
