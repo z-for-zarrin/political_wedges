@@ -21,7 +21,7 @@ const Explanation = () => {
                 something) and it never felt like the 'big picture' was fully encapsulated.
             </p>
             <p>
-                The 'Polarisation Parallelogram' was my attempt at fixing this. I developed it as part of
+                The <em>Polarisation Parallelogram</em> was my attempt at fixing this. I developed it as part of
                 my master's thesis, and realised it'd be pretty neat if I could make it into more than
                 just a chapter of something nobody other than my supervisor would ever read. So, following
                 my graduation, I sat on the idea for a bit before starting to work on some python code
@@ -31,12 +31,13 @@ const Explanation = () => {
                 thing about web development, and the final product is as much her creation as it is mine.
             </p>
             <p>
-                The framework is based on one intuitive rule: the larger the wedge (or occasionally wedges)
-                the more polarised the two groups specified are. All possible answers are included in the
-                graph, and the full exact distribution of answers for each group can be easily derived. With
-                some background maths, you can do a lot more with it (and I think there are some quite
-                beautiful and surprising properties the maths nerds will appreciate), but the core only
-                requires that one piece of knowledge — bigger wedge, higher polarisation — to understand.
+                The framework is based on one intuitive rule: <em>the larger the wedge (or occasionally
+                wedges) the more polarised the two groups specified are.</em> All possible answers are
+                included in the graph, and the full exact distribution of answers for each group can be
+                easily derived. With some background maths, you can do a lot more with it (and I think
+                there are some quite beautiful and surprising properties the maths nerds will appreciate),
+                but the core only requires that one piece of knowledge — bigger wedge, higher polarisation
+                — to understand.
             </p>
             <p>
                 In the 'Make a Graph' section of the website, you can input two societal groups of your choice
@@ -60,8 +61,8 @@ const Explanation = () => {
                 just over 70%. This does not mean that 70% of Labour lean respondents picked 'agree'
                 specifically — it means that 70% picked 'agree' <i>or</i> 'strongly agree'. We've gone up by around
                 thirty percentage points, so that is the percentage of respondents that answered 'agree'.
-                This is because the graph is 'cumulative' — at each point, the number on the y axis is the
-                percent of respondents who answered something <i>up to and including that answer</i>. The same
+                This is because the graph is <em>cumulative</em> — at each point, the number on the y axis is the
+                percent of respondents who answered something <em>up to and including that answer</em>. The same
                 principle applies for both groups as you keep going up the graph. This is why both groups
                 start at zero and finish at 100 - by the time all options have been exhausted, the two graphs
                 will meet again. And this creates our 'wedge'. It's also why you'll never see either of the
@@ -85,15 +86,15 @@ const Explanation = () => {
                 the wedge, the further from that 'equal distribution' scenario.
             </p>
             <p>
-                In practice, any large group of humans will be complex and diverse. It is <i>very</i> rare to find a
-                'polarisation score' here above 50% (the highest I've ever found with this dataset is just over
-                60%). Nothing coming close to 100% polarisation ever happens in practice with large groups.
+                <em>In practice, any large group of humans will be complex and diverse.</em> It is <i>very</i> rare
+                to find a 'polarisation score' here above 50% (the highest I've ever found with this dataset is just
+                over 60%). Nothing coming close to 100% polarisation ever happens in practice with large groups.
                 Make of that what you will!
             </p>
             <p>
                 You'll see this score (represented by &lambda;) in the top left alongside two epsilon values,
-                &epsilon;<sub>1</sub> and &epsilon;<sub>2</sub>. The epsilons measure how far towards each
-                extreme our groups are. &epsilon;<sub>1</sub> always refers to the top line, while
+                &epsilon;<sub>1</sub> and &epsilon;<sub>2</sub>. <em>The epsilons measure how far towards each
+                extreme our groups are.</em> &epsilon;<sub>1</sub> always refers to the top graph, while
                 &epsilon;<sub>2</sub> refers to the bottom one. An epsilon value of 0 for a group
                 would mean our distribution of scores centers right in the middle (e.g. if everyone chose the
                 middle option or if each option had an equal number of responses). A positive epsilon means
@@ -106,11 +107,11 @@ const Explanation = () => {
             </p>
             <p>
                 You might be realising that if there were no 'strong' options, both our epsilon values and lambda
-                value would imply greater extremity and polarisation respectively. That's absolutely right. I find
-                that the best use of the parallelogram is to compare the number <i>between</i> issues. You
-                might ask 'do citizens with vs without a degree have a higher polarisation score on <i>this</i>
-                issue or <i>that</i> one?' The number you see in the middle isn't as much use on its own as it is
-                when compared with other issues or groups that interest you. 
+                value would imply greater extremity and polarisation respectively. That's absolutely right. <em>I
+                find that the best use of the parallelogram is to compare the number between issues.</em> You
+                might ask 'do citizens with vs without a degree have a higher polarisation score on
+                <i>this</i> issue or <i>that</i> one?' The number you see in the middle isn't as much use on its own
+                as it is when compared with other issues or groups that interest you. 
             </p>
             <div id='example-box'>
                 <img id='example-2' src={RPFairShare} alt="A polarisation parallelogram that compares the views of high and low income people on
@@ -124,10 +125,15 @@ const Explanation = () => {
                 one might intuitively think would be more relevant to those two groups.
             </p>
             <p>
-                But my goal isn't to tell you what to think about what you find! I just hoped to make a tool that might make you learn something interesting about our society and how it thinks. What you make of those results is where your own inner social scientist comes in.
+                But my goal isn't to tell you what to think about what you find! I just hoped to make a tool that might
+                make you learn something interesting about our society and how it thinks. What you make of those results
+                is where your own inner social scientist comes in.
             </p>
             <p>
-                So really, just have some fun with it! I haven't tried anything like every combination of issues myself, of course. It's very possible that you'll be the first person in history to ever 'create' the result that you do. And if you create a graph that looks interesting or surprises you, let me know! I'd love to hear about what you've discovered and your thoughts on it. Happy graphing!
+                So really, just have some fun with it! I haven't tried anything like every combination of issues myself,
+                of course. It's very possible that you'll be the first person in history to ever 'create' the result that
+                you do. If you create a graph that looks interesting or surprises you, let me know! I'd love to hear
+                about what you've discovered and your thoughts on it. <em>Happy graphing!</em>
             </p>
             <h2><i>~ Joey</i></h2>
         </section>

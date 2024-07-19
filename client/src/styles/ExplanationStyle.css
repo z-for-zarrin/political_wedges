@@ -24,6 +24,16 @@
     color: #e45f2b;
 }
 
+em{
+    font-weight: 600;
+}
+
+sub{
+    vertical-align: bottom;
+    position: relative;
+    bottom: -0.3em;
+}
+
 #example-1{
     float: left;
     margin: 20px;
