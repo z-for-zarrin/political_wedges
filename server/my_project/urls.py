@@ -3,5 +3,5 @@ from django.urls import path
 
 urlpatterns = [
     path("", home_view, name="home"),
-    path("generate-graph/", parallelogram_view),
+    path('api/endpoint/', parallelogram_view, name='parallelogram_view'),
 ]
