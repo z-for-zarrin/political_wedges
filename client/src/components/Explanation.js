@@ -8,11 +8,10 @@ const Explanation = () => {
     return(
         <section className="page" id='how-it-works'>
             <div id='pdf-box'>
-            <i>For a more academic and mathematical explanation, including various semi-formal proofs,
-            you can download <a id='pdf-link' href={explanationPDF}>this pdf</a>. For those of you with social skills,
-            you may find the below a bit more helpful instead.</i>
+                <i>For a more academic and mathematical explanation, including various semi-formal proofs,
+                you can download <a id='pdf-link' href={explanationPDF}>this pdf</a>. For those of you with social skills,
+                you may find the below a bit more helpful instead.</i>
             </div>
-            
 
             <p>
                 Whenever I would read about how two different groups in society 'disagreed' on a certain
@@ -53,12 +52,12 @@ const Explanation = () => {
                 Look at the two lines here, for example, on the question 'Government should redistribute
                 income from the better-off to those who are less well off'. You can see that, at the point of
                 'strongly agree', the 'Conservative Lean' number is close to zero, while for 'Labour Lean' it
-                is almost 40%. So just under four in ten labour leaners strongly agree with the sentiment,
-                while almost no conservatives do.
+                is almost 40%. So just under four in ten Labour leaners strongly agree with the sentiment,
+                while almost no Conservatives do.
             </p>
             <p>
-                Now, follow the lines along the x-axis. Once we get to 'agree' the labour number goes up to
-                just over 70%. This does not mean that 70% of labour lean respondents picked 'agree'
+                Now, follow the lines along the x-axis. Once we get to 'agree' the Labour number goes up to
+                just over 70%. This does not mean that 70% of Labour lean respondents picked 'agree'
                 specifically — it means that 70% picked 'agree' <i>or</i> 'strongly agree'. We've gone up by around
                 thirty percentage points, so that is the percentage of respondents that answered 'agree'.
                 This is because the graph is 'cumulative' — at each point, the number on the y axis is the
@@ -70,14 +69,14 @@ const Explanation = () => {
                 would be a horizontal line, as the total percentage of answerers would not have changed.   
             </p>
             <p>
-                If the labour and conservative distributions were exactly the same, then the area between
+                If the Labour and Conservative distributions were exactly the same, then the area between
                 them would be zero. In other words, polarisation would be non-existent.
             </p>
             <p>
                 Now imagine <i>every</i> member of one group answered with 'strongly disagree' and every member of
                 the other answered 'strongly agree'. In this case, the groups would follow opposite ends of
                 the dashed parallelogram. In our case, if our party leaners were truly fully polarised, the
-                red labour line would jump straight up to 100% for 'strongly agree'. The blue conservative
+                red Labour line would jump straight up to 100% for 'strongly agree'. The blue Conservative
                 line would follow along the bottom, and then jump up from 0 to 100% at 'strongly disagree'.
                 This would be 100% polarisation.
             </p>
@@ -102,11 +101,13 @@ const Explanation = () => {
                 unaninmously strongly agreed, &epsilon;<sub>1</sub> would be 100. Similarly, if Conservative
                 respondents all unanimously strongly disagreed, then <i>their</i> epsilon,
                 &epsilon;<sub>2</sub>, would be 100. Here, we can see that &epsilon;<sub>1</sub> is 46 and
-                &epsilon;<sub>2</sub> is 18. This means that the conservatives are actually quite a bit closer
-                to neutrality on the question than labour!
+                &epsilon;<sub>2</sub> is 18. This means that the Conservatives are actually quite a bit closer
+                to neutrality on the question than Labour!
             </p>
             <p>
-                I find that the best use of the parallelogram is to compare the number <i>between</i> issues. You
+                You might be realising that if there were no 'strong' options, both our epsilon values and lambda
+                value would imply greater extremity and polarisation respectively. That's absolutely right. I find
+                that the best use of the parallelogram is to compare the number <i>between</i> issues. You
                 might ask 'do citizens with vs without a degree have a higher polarisation score on <i>this</i>
                 issue or <i>that</i> one?' The number you see in the middle isn't as much use on its own as it is
                 when compared with other issues or groups that interest you. 
@@ -121,7 +122,6 @@ const Explanation = () => {
                 For example, it surprised me that the rich and the poor tended to be more polarised on issues
                 relating to law and order, values and traditions than on issues related to economic equality - which
                 one might intuitively think would be more relevant to those two groups.
-            
             </p>
             <p>
                 But my goal isn't to tell you what to think about what you find! I just hoped to make a tool that might make you learn something interesting about our society and how it thinks. What you make of those results is where your own inner social scientist comes in.
