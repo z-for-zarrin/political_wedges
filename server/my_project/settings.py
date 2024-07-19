@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-sed_kv*h*yocqjg&%uw+7ec@*0pv1y7%$(4!-kc+b!xjveb$e9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'political-wedges-79f88a2118a5.herokuapp.com',
