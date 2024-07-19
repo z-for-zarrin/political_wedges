@@ -21,7 +21,8 @@ const GraphContainer = () => {
     return (
         <section className='page'>
             <section id='graph-creation-guide'>
-                <h3>Wondering where to start?</h3>
+                <h3>Welcome!</h3>
+                <h4>Wondering where to start?</h4>
                 <p>For some interesting shapes, try the following:</p>
                 <ol id='suggestions'>
                     <li>Green Party vs Reform Party leaners on 'For some crimes, the death penalty is the most appropriate sentence' (from 'Law and Order')</li>
