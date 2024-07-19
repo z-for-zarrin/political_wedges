@@ -47,8 +47,8 @@ const Explanation = () => {
                 questions to choose from! One you've picked, a graph will be generated that will tell you about
                 how and to what extent those two groups in society differ in opinion.
             </p>
-            <img id='example-1' src={redistribution} alt='A polarisation parallelogram that compares the views of labour and conservative leaners on
-            the issue of resditriburing income'/>
+            <img id='example-1' src={redistribution} alt='A polarisation parallelogram that compares the views
+            of labour and conservative leaners on the issue of resditriburing income'/>
             <p>
                 Look at the two lines here, for example, on the question 'Government should redistribute
                 income from the better-off to those who are less well off'. You can see that, at the point of
@@ -74,7 +74,7 @@ const Explanation = () => {
                 them would be zero. In other words, polarisation would be non-existent.
             </p>
             <p>
-                Now imagine EVERY member of one group answered with 'strongly disagree' and every member of
+                Now imagine <i>every</i> member of one group answered with 'strongly disagree' and every member of
                 the other answered 'strongly agree'. In this case, the groups would follow opposite ends of
                 the dashed parallelogram. In our case, if our party leaners were truly fully polarised, the
                 red labour line would jump straight up to 100% for 'strongly agree'. The blue conservative
@@ -85,12 +85,25 @@ const Explanation = () => {
                 So our wedge is telling us where in relation to these two extremes each group is. The bigger
                 the wedge, the further from that 'equal distribution' scenario.
             </p>
-
             <p>
-                In practice, any large group of humans will be complex and diverse. It is VERY rare to find a
-                polarisation score here above 50 (the highest I've ever found with this dataset is just over
-                60). Nothing coming close to 100% polarisation ever happens in practice with large groups.
+                In practice, any large group of humans will be complex and diverse. It is <i>very</i> rare to find a
+                'polarisation score' here above 50% (the highest I've ever found with this dataset is just over
+                60%). Nothing coming close to 100% polarisation ever happens in practice with large groups.
                 Make of that what you will!
+            </p>
+            <p>
+                You'll see this score (represented by &lambda;) in the top left alongside two epsilon values,
+                &epsilon;<sub>1</sub> and &epsilon;<sub>2</sub>. The epsilons measure how far towards each
+                extreme our groups are. &epsilon;<sub>1</sub> always refers to the top line, while
+                &epsilon;<sub>2</sub> refers to the bottom one. An epsilon value of 0 for a group
+                would mean our distribution of scores centers right in the middle (e.g. if everyone chose the
+                middle option or if each option had an equal number of responses). A positive epsilon means
+                the top graph leans at least partially towards the low end of the scale. If Labour
+                unaninmously strongly agreed, &epsilon;<sub>1</sub> would be 100. Similarly, if Conservative
+                respondents all unanimously strongly disagreed, then <i>their</i> epsilon,
+                &epsilon;<sub>2</sub>, would be 100. Here, we can see that &epsilon;<sub>1</sub> is 46 and
+                &epsilon;<sub>2</sub> is 18. This means that the conservatives are actually quite a bit closer
+                to neutrality on the question than labour!
             </p>
             <p>
                 I find that the best use of the parallelogram is to compare the number <i>between</i> issues. You
