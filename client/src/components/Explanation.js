@@ -83,7 +83,9 @@ const Explanation = () => {
             </p>
             <p>
                 So our wedge is telling us where in relation to these two extremes each group is. The bigger
-                the wedge, the further from that 'equal distribution' scenario.
+                the wedge, the further from that 'equal distribution' scenario. This is quantified as the
+                area of the wedge as a percentage of the area of the hypothetical 100% polarisation
+                parallelogram, which is represented by the dotted lines.
             </p>
             <p>
                 <em>In practice, any large group of humans will be complex and diverse.</em> It is <i>very</i> rare
