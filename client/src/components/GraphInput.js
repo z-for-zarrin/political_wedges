@@ -12,7 +12,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
        DVSex21:   ["Female", "Male"],
        partyfw:   ["Conservative", "Labour", "Liberal Democrats", "Scottish National Party",
                    "Plaid Cymru", "Green", "UKIP", "Reform"],
-         SRInc:   ["Identify as high income", "Idenitfy as middle income", "Identify as low income"],
+         SRInc:   ["Identify as high income", "Identify as middle income", "Identify as low income"],
       HigherEd:   ["Degree", "No degree"]
     }
 
