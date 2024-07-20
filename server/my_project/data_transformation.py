@@ -43,7 +43,7 @@ def load_and_transform():
     data.loc[data['HomoSex'] == 6, 'HomoSex'] = 3
     data.loc[data['HomsBult'] == 6, 'HomsBult'] = 3
 
-    ten_set = ["MiEcono", "MiCultur", "TrstLgl", "TrstPlc", "HltSat", "IntPriv", "IntMidi"]
+    ten_set = ["MiEcono", "MiCultur", "TrstLgl", "TrstPlc", "HltSat", "IntPriv", "IntMidi", "partyfw", "Religion"]
     replace_values = [-1, 998, 999, 77, 88, 98, 99]
     extra_values = [8, 9]
     
