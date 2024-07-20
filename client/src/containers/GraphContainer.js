@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Graph from "../components/Graph";
 import GraphInput from "../components/GraphInput";
 
 const GraphContainer = () => {
@@ -21,8 +20,18 @@ const GraphContainer = () => {
 
     return (
         <section className='page'>
-            <section id='parameter-explainer'>
-                Make a graph!
+            <section id='graph-creation-guide'>
+                <h3>Welcome!</h3>
+                <h4>Wondering where to start?</h4>
+                <p>For some interesting shapes, try the following:</p>
+                <ol id='suggestions'>
+                    <li>Green Party vs Reform Party leaners on 'For some crimes, the death penalty is the most appropriate sentence' (from 'Law and Order')</li>
+                    <i>Can you find an example with a higher polarisation value?</i>
+                    <li>High vs Low Income people on 'Governments should redistribute income...' (from 'Finance and Economics')</li>
+                    <i>How does the polarisation compare to what you expected? Now try some of the Law and Order questions for High vs Low Income.</i>
+                    <li>High vs Low Income on the issue of transgender people being allowed to change their birth certificates (from 'Gender and Sexual Minorities')</li>
+                    <i>Why do you think the 'jump' in the middle occurs?</i>
+                </ol>
             </section>
             <GraphInput
                 group1Id={group1Id}

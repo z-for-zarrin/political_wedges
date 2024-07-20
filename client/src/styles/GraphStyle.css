@@ -1,5 +1,9 @@
-#parameter-explainer{
+#graph-creation-guide{
     padding-bottom: 15px;
+}
+
+#suggestions li{
+    margin-top: 5px;
 }
 
 #parameters-form{
@@ -55,7 +59,6 @@ input:hover{
 
 input:active{
     grid-row-start: 3;
-    margin-left: 1em;
     background-color: #e45f2b;
     border: none;
 }

@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import logo from './assets/political_wedges_logo_sketch-removebg-preview.png'
+import logo from './assets/logo_final1.png'
 import GraphContainer from './containers/GraphContainer.js';
 import About from './components/About.js';
 import Explanation from './components/Explanation.js';
@@ -32,7 +32,6 @@ function App() {
   return (
     <>
       <header className="header">
-        <h1>Political Wedges</h1>
         <img src={logo} alt='logo' id='logo'/>
       </header>
       <RouterProvider router={wedgeRoutes} />
