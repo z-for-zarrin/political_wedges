@@ -10,11 +10,11 @@ function App() {
 
   const wedgeRoutes = createBrowserRouter([
     {
-        path: "/",
+        path: '/',
         element: <Navigation />,
         children: [ 
             {
-                path: "/create",
+                path: "/",
                 element: <GraphContainer />
             },
             {
