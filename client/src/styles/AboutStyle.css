@@ -38,6 +38,10 @@ sup{
     margin-right: 2em;
 }
 
+#icon-credit{
+    text-align: center;
+}
+
 .credit:link{
     margin: 10px;
     text-decoration: underline;

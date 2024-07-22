@@ -61,10 +61,10 @@ const About = () => {
                 </div>
                 <img className='profile-photo' src={zarrin} alt="candid of zarrin sitting and smiling. the back of joey's head is there"/>
             </section>
-            <footer>
+            <section id='icon-credit'>
                 <a className='credit' href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Fathema Khanom - Flaticon</a>
                 <a className='credit' href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
-            </footer>
+            </section>
         </section>
     );
 }
