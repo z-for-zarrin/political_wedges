@@ -9,6 +9,14 @@ header{
   height: 125px;
 }
 
+h3{
+  font-family: 'Alata', Arial, Helvetica, sans-serif;
+}
+
+h4{
+  font-family: 'Alata', Arial, Helvetica, sans-serif;
+}
+
 nav > ul{
   list-style-type: none;
   margin: 0;
@@ -37,6 +45,7 @@ nav > ul{
 
 body{
   background-color: #f0f8ff;
+  font-family: 'Abel', Arial, Helvetica, sans-serif;
 }
 
 .page{

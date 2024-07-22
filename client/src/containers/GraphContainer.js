@@ -41,7 +41,7 @@ const GraphContainer = () => {
                 question={question}
                 setQuestion={setQuestion}
                 postGraph={postGraph} />
-            {graphSrc ? <img id="graph" src={"data:image/jpeg;base64," + graphSrc} /> : null}
+            {graphSrc ? <img id="graph" src={"data:image/jpeg;base64," + graphSrc} alt='polarisation parallelogram graph'/> : null}
             
         </section>
     );

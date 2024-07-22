@@ -8,7 +8,7 @@ const About = () => {
     return(
         <section className="page">
             <section className="profile">
-                <img className='profile-photo' src={joey} alt='picture of Joey climbing a tree'/>
+                <img className='profile-photo' src={joey} alt='Joey climbing a tree'/>
                 <div className='profile-content'>
                     <h3>Joey Cartwright — Backend Developer & Data Scientist</h3>
                     <p>Joey, like his co-creator and (according to historians) close friend Zarrin,
@@ -58,7 +58,7 @@ const About = () => {
                         </a>
                     </div>
                 </div>
-                <img className='profile-photo' src={zarrin} alt="candid picture of zarrin sitting and smiling. the back of joey's head is there"/>
+                <img className='profile-photo' src={zarrin} alt="candid of zarrin sitting and smiling. the back of joey's head is there"/>
             </section>
             <footer>
                 <a className='credit' href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Fathema Khanom - Flaticon</a>
