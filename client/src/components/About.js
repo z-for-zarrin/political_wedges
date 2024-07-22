@@ -23,7 +23,8 @@ const About = () => {
                         a detailed conversation on the best places to find chicken wings (and once
                         created a chicken wing tier list data set from his friend group after a
                         'Chicken Crawl'), but will happy also talk to you about 3D <i>Zelda</i> or 
-                        <i> Mario</i> titles, murder mysteries, or 20<sup>th</sup> century jazz pianists.</p>
+                        <i> Mario</i> titles, murder mysteries, or 20<sup>th</sup> century jazz pianists.
+                        Please direct graph-related queries and Oscar Peterson videos to him.</p>
                     <div className='icons'>
                         <a href='https://www.linkedin.com/in/joseph-joey-cartwright-13b4b31b6/?originalSubdomain=uk'>
                         <img className='link-icon' src={linkedinIcon} alt="link to Joey's linkedin profile" />
