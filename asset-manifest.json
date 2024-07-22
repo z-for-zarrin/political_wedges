@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/political_wedges/static/css/main.102f0f16.css",
-    "main.js": "/political_wedges/static/js/main.46c7cfc8.js",
+    "main.css": "/political_wedges/static/css/main.48db7459.css",
+    "main.js": "/political_wedges/static/js/main.aac3363b.js",
     "static/js/453.419a5d54.chunk.js": "/political_wedges/static/js/453.419a5d54.chunk.js",
     "static/media/joey.JPG": "/political_wedges/static/media/joey.83ff05b208e5ccc5e1c0.JPG",
     "static/media/ordpeople.png": "/political_wedges/static/media/ordpeople.a6a84ec73d7c82e61b40.png",
@@ -13,12 +13,12 @@
     "static/media/github.png": "/political_wedges/static/media/github.44eee0c4a6c25b0d7347.png",
     "static/media/linkedin.png": "/political_wedges/static/media/linkedin.b543965794897027099a.png",
     "index.html": "/political_wedges/index.html",
-    "main.102f0f16.css.map": "/political_wedges/static/css/main.102f0f16.css.map",
-    "main.46c7cfc8.js.map": "/political_wedges/static/js/main.46c7cfc8.js.map",
+    "main.48db7459.css.map": "/political_wedges/static/css/main.48db7459.css.map",
+    "main.aac3363b.js.map": "/political_wedges/static/js/main.aac3363b.js.map",
     "453.419a5d54.chunk.js.map": "/political_wedges/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.102f0f16.css",
-    "static/js/main.46c7cfc8.js"
+    "static/css/main.48db7459.css",
+    "static/js/main.aac3363b.js"
   ]
 }
