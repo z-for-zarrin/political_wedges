@@ -6,9 +6,6 @@ from django.http import JsonResponse, HttpResponse
 from my_project.polpargraph import parallelogram
 from django.views.decorators.csrf import csrf_exempt
 
-def home_view(request):
-    return HttpResponse("Welcome to the home page!")
-
 
 @csrf_exempt
 def parallelogram_view(request):
