@@ -28,6 +28,10 @@ em{
     font-weight: 600;
 }
 
+.maths{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 sub{
     vertical-align: bottom;
     position: relative;

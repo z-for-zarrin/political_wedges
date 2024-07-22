@@ -94,18 +94,17 @@ const Explanation = () => {
                 Make of that what you will!
             </p>
             <p>
-                You'll see this score (represented by &lambda;) in the top left alongside two epsilon values,
-                &epsilon;<sub>1</sub> and &epsilon;<sub>2</sub>. <em>The epsilons measure how far towards each
-                extreme our groups are.</em> &epsilon;<sub>1</sub> always refers to the top graph, while
-                &epsilon;<sub>2</sub> refers to the bottom one. An epsilon value of 0% for a group
-                would mean our distribution of scores centers right in the middle (e.g. if everyone chose the
-                middle option or if each option had an equal number of responses). A positive epsilon means
-                the top graph leans at least partially towards the low end of the scale. If Labour
-                unaninmously strongly agreed, &epsilon;<sub>1</sub> would be 100%. Similarly, if Conservative
-                respondents all unanimously strongly disagreed, then <i>their</i> epsilon,
-                &epsilon;<sub>2</sub>, would be 100%. Here, we can see that &epsilon;<sub>1</sub> is 46% and
-                &epsilon;<sub>2</sub> is 18%. This means that the Conservatives are actually quite a bit closer
-                to neutrality on the question than Labour!
+                You'll see this score (represented by <span className='maths'>&lambda;</span>) in the top left
+                alongside two epsilon values, <span className='maths'>&epsilon;<sub>1</sub></span> and <span className='maths'>&epsilon;<sub>2</sub></span>. <em>The
+                epsilons measure how far towards each extreme our groups are.</em> <span className='maths'>&epsilon;<sub>1</sub></span> always
+                refers to the top graph, while <span className='maths'>&epsilon;<sub>2</sub></span> refers to
+                the bottom one. An epsilon value of 0% for a group would mean our distribution of scores centers
+                right in the middle (e.g. if everyone chose the middle option or if each option had an equal
+                number of responses). A positive epsilon meansthe top graph leans at least partially towards the low
+                end of the scale. If Labour unaninmously strongly agreed, <span className='maths'>&epsilon;<sub>1</sub></span> would
+                be 100%. Similarly, if Conservative respondents all unanimously strongly disagreed, then <i>their</i> epsilon, <span className='maths'>&epsilon;<sub>2</sub></span>,
+                would be 100%. Here, we can see that <span className='maths'>&epsilon;<sub>1</sub></span> is 46% and <span className='maths'>&epsilon;<sub>2</sub></span> is
+                18%. This means that the Conservatives are actually quite a bit closer to neutrality on the question than Labour!
             </p>
             <p>
                 You might be realising that if there were no 'strong' options, both our epsilon values and lambda
