@@ -8,7 +8,7 @@ const About = () => {
     return(
         <section className="page">
             <section className="profile">
-                <img className='profile-photo' src={joey} alt='picture of Joey climbing a tree'/>
+                <img className='profile-photo' src={joey} alt='Joey climbing a tree'/>
                 <div className='profile-content'>
                     <h3>Joey Cartwright — Backend Developer & Data Scientist</h3>
                     <p>Joey, like his co-creator and (according to historians) close friend Zarrin,
@@ -23,7 +23,8 @@ const About = () => {
                         a detailed conversation on the best places to find chicken wings (and once
                         created a chicken wing tier list data set from his friend group after a
                         'Chicken Crawl'), but will happy also talk to you about 3D <i>Zelda</i> or 
-                        <i> Mario</i> titles, murder mysteries, or 20<sup>th</sup> century jazz pianists.</p>
+                        <i> Mario</i> titles, murder mysteries, or 20<sup>th</sup> century jazz pianists.
+                        Please direct graph-related queries and Oscar Peterson videos to him.</p>
                     <div className='icons'>
                         <a href='https://www.linkedin.com/in/joseph-joey-cartwright-13b4b31b6/?originalSubdomain=uk'>
                         <img className='link-icon' src={linkedinIcon} alt="link to Joey's linkedin profile" />
@@ -58,7 +59,7 @@ const About = () => {
                         </a>
                     </div>
                 </div>
-                <img className='profile-photo' src={zarrin} alt="candid picture of zarrin sitting and smiling. the back of joey's head is there"/>
+                <img className='profile-photo' src={zarrin} alt="candid of zarrin sitting and smiling. the back of joey's head is there"/>
             </section>
             <footer>
                 <a className='credit' href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Fathema Khanom - Flaticon</a>
