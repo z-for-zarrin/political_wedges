@@ -11,10 +11,12 @@ header{
 
 h3{
   font-family: 'Alata', Arial, Helvetica, sans-serif;
+  color: #00008b;
 }
 
 h4{
   font-family: 'Alata', Arial, Helvetica, sans-serif;
+  color: #00008b;
 }
 
 nav > ul{
@@ -40,7 +42,7 @@ nav > ul{
 
 .nav-item:hover{
   background-color: #F6C445;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 body{
