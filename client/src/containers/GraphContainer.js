@@ -41,7 +41,12 @@ const GraphContainer = () => {
                 question={question}
                 setQuestion={setQuestion}
                 postGraph={postGraph} />
-            {graphSrc ? <img id="graph" src={"data:image/jpeg;base64," + graphSrc} alt='polarisation parallelogram graph'/> : null}
+            {graphSrc ? 
+            <>
+                <img id="graph" src={"data:image/jpeg;base64," + graphSrc} alt='polarisation parallelogram graph'/>
+                <p className='citation'>Data from NatCen Social Research. (2023). British Social Attitudes Survey, 2021. [data collection]. UK Data Service. SN: 9072, DOI: http://doi.org/10.5255/UKDA-SN-9072-1</p>
+            </>
+            : null}
             
         </section>
     );

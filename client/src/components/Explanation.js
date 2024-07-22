@@ -137,6 +137,7 @@ const Explanation = () => {
                 about what you've discovered and your thoughts on it. <em>Happy graphing!</em>
             </p>
             <h2><i>~ Joey</i></h2>
+            <p className='citation'>Data from NatCen Social Research. (2023). British Social Attitudes Survey, 2021. [data collection]. UK Data Service. SN: 9072, DOI: http://doi.org/10.5255/UKDA-SN-9072-1</p>
         </section>
     );
 }
