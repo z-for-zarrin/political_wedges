@@ -57,7 +57,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://192.168.1.166:3000", 
+    "http://192.168.1.166:3000",
+    "https://z-for-zarrin.github.io/political_wedges/"
 ]
 
 ROOT_URLCONF = 'my_project.urls'
