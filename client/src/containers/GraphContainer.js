@@ -9,7 +9,7 @@ const GraphContainer = () => {
     const[graphSrc, setGraphSrc] = useState("");
 
     const postGraph = async (parameters) => {
-        const response = await fetch("http://192.168.1.127:8000/generate-graph/", {
+        const response = await fetch("https://political-wedges-79f88a2118a5.herokuapp.com/generate-graph/", {
             method: "POST",
             headers: {"Content-Type": "application/json",},
             body: JSON.stringify(parameters),
