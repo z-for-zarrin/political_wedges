@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import logo from './assets/logo-title.png'
 import GraphContainer from './containers/GraphContainer.js';
@@ -9,7 +9,7 @@ import NotFound from './components/NotFound.js';
 
 function App() {
 
-  const wedgeRoutes = createBrowserRouter([
+  const wedgeRoutes = createHashRouter([
     {
         path: '/',
         element: <Navigation />,
