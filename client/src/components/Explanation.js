@@ -100,7 +100,7 @@ const Explanation = () => {
                 refers to the top graph, while <span className='maths'>&epsilon;<sub>2</sub></span> refers to
                 the bottom one. An epsilon value of 0% for a group would mean our distribution of scores centers
                 right in the middle (e.g. if everyone chose the middle option or if each option had an equal
-                number of responses). A positive epsilon meansthe top graph leans at least partially towards the low
+                number of responses). A positive epsilon means the top graph leans at least partially towards the low
                 end of the scale. If Labour unaninmously strongly agreed, <span className='maths'>&epsilon;<sub>1</sub></span> would
                 be 100%. Similarly, if Conservative respondents all unanimously strongly disagreed, then <i>their</i> epsilon, <span className='maths'>&epsilon;<sub>2</sub></span>,
                 would be 100%. Here, we can see that <span className='maths'>&epsilon;<sub>1</sub></span> is 46% and <span className='maths'>&epsilon;<sub>2</sub></span> is
