@@ -64,7 +64,7 @@ const Explanation = () => {
                 This is because the graph is <em>cumulative</em> — at each point, the number on the y-axis is the
                 percent of respondents who answered something <em>up to and including that answer</em>. The same
                 principle applies for both groups as you keep going up the graph. This is why both groups
-                start at zero and finish at 100% - by the time all options have been exhausted, the two graphs
+                start at zero and finish at 100% — by the time all options have been exhausted, the two graphs
                 will meet again. And this creates our 'wedge'. It's also why you'll never see either of the
                 lines go down. If nobody answered a certain way, then the line from that answer to the next
                 would be a horizontal line, as the total percentage of answerers would not have changed.   
@@ -122,7 +122,7 @@ const Explanation = () => {
             </div>
             <p>
                 For example, it surprised me that the rich and the poor tended to be more polarised on issues
-                relating to law and order, values and traditions than on issues related to economic equality - which
+                relating to law and order, values and traditions than on issues related to economic equality — which
                 one might intuitively think would be more relevant to those two groups.
             </p>
             <p>
