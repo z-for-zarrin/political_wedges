@@ -22,6 +22,8 @@ const GraphContainer = () => {
         <section className='page'>
             <section id='graph-creation-guide'>
                 <h3>Welcome!</h3>
+                <p>This tool allows you to generate a detailed graphic which compares the opinions of two groups of your choice
+                    on a social, political or economic issue of your choice, in a format called the 'Polarisation Parallelogram'.</p>
                 <h4>Wondering where to start?</h4>
                 <p>For some interesting shapes, try the following:</p>
                 <ol id='suggestions'>
@@ -32,6 +34,7 @@ const GraphContainer = () => {
                     <li>High vs Low Income on the issue of transgender people being allowed to change their birth certificates (from 'Gender and Sexual Minorities')</li>
                     <i>Why do you think the 'jump' in the middle occurs?</i>
                 </ol>
+                <p><i>* denotes where a question has been paraphrased for brevity or better formatting.</i></p>
             </section>
             <GraphInput
                 group1Id={group1Id}

@@ -64,7 +64,7 @@ const Explanation = () => {
                 This is because the graph is <em>cumulative</em> — at each point, the number on the y-axis is the
                 percent of respondents who answered something <em>up to and including that answer</em>. The same
                 principle applies for both groups as you keep going up the graph. This is why both groups
-                start at zero and finish at 100% - by the time all options have been exhausted, the two graphs
+                start at zero and finish at 100% — by the time all options have been exhausted, the two graphs
                 will meet again. And this creates our 'wedge'. It's also why you'll never see either of the
                 lines go down. If nobody answered a certain way, then the line from that answer to the next
                 would be a horizontal line, as the total percentage of answerers would not have changed.   
@@ -100,7 +100,7 @@ const Explanation = () => {
                 refers to the top graph, while <span className='maths'>&epsilon;<sub>2</sub></span> refers to
                 the bottom one. An epsilon value of 0% for a group would mean our distribution of scores centers
                 right in the middle (e.g. if everyone chose the middle option or if each option had an equal
-                number of responses). A positive epsilon meansthe top graph leans at least partially towards the low
+                number of responses). A positive epsilon means the top graph leans at least partially towards the low
                 end of the scale. If Labour unaninmously strongly agreed, <span className='maths'>&epsilon;<sub>1</sub></span> would
                 be 100%. Similarly, if Conservative respondents all unanimously strongly disagreed, then <i>their</i> epsilon, <span className='maths'>&epsilon;<sub>2</sub></span>,
                 would be 100%. Here, we can see that <span className='maths'>&epsilon;<sub>1</sub></span> is 46% and <span className='maths'>&epsilon;<sub>2</sub></span> is
@@ -122,7 +122,7 @@ const Explanation = () => {
             </div>
             <p>
                 For example, it surprised me that the rich and the poor tended to be more polarised on issues
-                relating to law and order, values and traditions than on issues related to economic equality - which
+                relating to law and order, values and traditions than on issues related to economic equality — which
                 one might intuitively think would be more relevant to those two groups.
             </p>
             <p>

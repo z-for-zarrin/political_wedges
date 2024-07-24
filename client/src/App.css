@@ -54,6 +54,10 @@ body{
   margin: 20px;
 }
 
+.citation{
+  text-align: center;
+}
+
 footer{
   text-align: center;
 }
