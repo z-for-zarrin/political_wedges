@@ -34,7 +34,7 @@ const GraphContainer = () => {
                     <li>High vs Low Income on the issue of transgender people being allowed to change their birth certificates (from 'Gender and Sexual Minorities')</li>
                     <i>Why do you think the 'jump' in the middle occurs?</i>
                 </ol>
-                <p><i>* denotes where a question has been paraphrased for brevity or better formatting.</i></p>
+                <p><i>† denotes where a question has been paraphrased for brevity or better formatting.</i></p>
             </section>
             <GraphInput
                 group1Id={group1Id}
