@@ -115,9 +115,9 @@ const Explanation = () => {
                 as it is when compared with other issues or groups that interest you. 
             </p>
             <div id='example-box'>
-                <img id='example-2' src={RPFairShare} alt="A polarisation parallelogram that compares the views of high and low income people on
+                <img src={RPFairShare} alt="A polarisation parallelogram that compares the views of high and low income people on
                 the whether workers get their fair share of the nation's wealth"/>
-                <img id='example-3' src={RPDeathPenalty} alt='A polarisation parallelogram that compares the views of high and low income people on the issue of
+                <img src={RPDeathPenalty} alt='A polarisation parallelogram that compares the views of high and low income people on the issue of
                 the death penalty' />
             </div>
             <p>
