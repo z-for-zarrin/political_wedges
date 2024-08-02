@@ -42,12 +42,12 @@ sub{
 
 #example-1{
     float: left;
-    margin: 2%;
+    margin: 2% 2% 2% 0;
     height: auto;
-    width: 50%;
+    width: 60%;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 800px){
     #example-1{
         margin: 2%;
         height: auto;
@@ -65,5 +65,21 @@ sub{
     margin: 2%;
     width: 48%;
     height: auto;
+}
+
+@media (max-width: 1000px){
+    #example-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #example-box > img{
+        margin: 2%;
+        width: 100%;
+        height: auto;
+    }
+    
 }
 
