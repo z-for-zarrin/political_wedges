@@ -1,6 +1,5 @@
 import { createHashRouter, RouterProvider } from 'react-router-dom';
-import './App.css';
-import logo from './assets/logo-title.png'
+import './App.css'
 import GraphContainer from './containers/GraphContainer.js';
 import About from './components/About.js';
 import Explanation from './components/Explanation.js';
@@ -36,10 +35,7 @@ function App() {
 
   return (
     <>
-      <header className="header">
-        <img src={logo} alt='logo' id='logo'/>
-      </header>
-      <RouterProvider router={wedgeRoutes} />
+      <RouterProvider router={wedgeRoutes} />   
       <footer>
         <p>&copy; Joey Cartwright & Zarrin Rahman 2024</p>
       </footer>
