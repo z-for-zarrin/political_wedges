@@ -141,9 +141,10 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 <option value="SRInc">Income</option>
                 <option value="HigherEd">University Education</option>
             </select>
-            <label htmlFor="group-1">Group 1</label>
+            <label htmlFor="group-1" className="indented-element">Group 1</label>
             <select
                 id="group-1"
+                className="indented-element"
                 type="text"
                 name="group1"
                 defaultValue={JSON.stringify({index: null, value:""})}
@@ -155,9 +156,10 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 <option disabled value={JSON.stringify({index: null, value:""})}>Select first group</option>
                 {group1Options}
             </select>
-            <label htmlFor="group-2">Group 2</label>
+            <label htmlFor="group-2" className="indented-element">Group 2</label>
             <select
                 id="group-2"
+                className="indented-element"
                 type="text"
                 name="group2"
                 defaultValue={JSON.stringify({index: null, value:""})}
@@ -189,9 +191,10 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 <option value="workplaces">Workplaces</option>
                 <option value="misc">Miscellaneous</option>
             </select>
-            <label htmlFor="question" id="question-label">Question</label>
+            <label htmlFor="question" id="question-label" className="indented-element">Question</label>
             <select
                 id="question-select"
+                className="indented-element"
                 type="text"
                 name="question"
                 defaultValue=""

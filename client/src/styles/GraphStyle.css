@@ -98,6 +98,10 @@ input:active{
         height: 30px;
     }
 
+    .indented-element{
+        margin-left:10%;
+    }
+
     input{
         align-self: center;
         width: 75%;
