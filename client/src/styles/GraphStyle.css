@@ -50,6 +50,7 @@ input{
     border-radius: 5px;
     transition-duration: 0.1s;
     height: 2em;
+    font-family: 'Alata', Arial, Helvetica, sans-serif;
 }
 
 input:hover{
@@ -60,6 +61,7 @@ input:hover{
 input:active{
     grid-row-start: 3;
     background-color: #e45f2b;
+    color: #f0f8ff;
     border: none;
 }
 
@@ -67,7 +69,7 @@ input:active{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 2%;
     border-radius: 5%;
     width: 70%;
     height: auto;
