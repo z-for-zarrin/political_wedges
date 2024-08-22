@@ -67,8 +67,14 @@ input:active{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    border-radius: 20px;
+    margin-top: 5%;
+    border-radius: 5%;
     width: 70%;
     height: auto;
+}
+
+@media (max-width: 800px){
+    #graph{
+        width: 90%;
+    }
 }
