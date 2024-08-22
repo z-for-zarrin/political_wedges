@@ -9,6 +9,13 @@ header{
   height: 125px;
 }
 
+@media (max-width: 800px){
+  #logo{
+    width: 100%;
+    height: auto;
+  }
+}
+
 h3{
   font-family: 'Alata', Arial, Helvetica, sans-serif;
   color: #00008b;
