@@ -8,7 +8,7 @@
 
 #parameters-form{
     display: grid;
-    grid-template: 37.5% 37.5% 25% / 10% 23.3% repeat(4, 16.6%);
+    grid-template: 37.5% 37.5% 25% / 12% 21.3% repeat(4, 16.6%);
     background-color: #b0e0e6;
     border-radius: 10px;
     height: 160px;
