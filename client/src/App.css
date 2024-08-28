@@ -40,6 +40,17 @@ nav > ul{
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  nav > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .nav-item{
+    width: auto;
+  }
+}
+
 .nav-item a:link, a:visited{
   text-decoration: none;
   display: block;
