@@ -40,6 +40,7 @@ sup{
 
 #icon-credit{
     text-align: center;
+    margin-top: 3em;
 }
 
 .credit:link{
@@ -75,17 +76,4 @@ sup{
     .profile-content{
         display: inline;
     }
-
-    h3{
-        order: 1;
-    }
-
-    p{
-        order: 3;
-    }
-
-    .icons{
-        order: 3;
-    }
-
 }

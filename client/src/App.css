@@ -67,6 +67,11 @@ body{
 
 footer{
   text-align: center;
+  background-color: #b0e0e6;
+  margin-top: 10%;
+  margin-bottom: -4%;
+  padding-bottom: 5px;
+  padding-top: 1px;
 }
 
 /* dark blue: #00008b,
