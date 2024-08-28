@@ -2,12 +2,6 @@
     display: flex;
 }
 
-@media (max-width: 800px) {
-    .profile{
-        flex-direction: column;
-    }
-}
-
 .profile-photo{
     height: 100%;
     width: 50%;
@@ -65,4 +59,33 @@ sup{
 .credit:visited{
     margin: 10px;
     color: #00008b;
+}
+
+@media (max-width: 800px) {
+    .profile{
+        flex-direction: column;
+    }
+
+    .profile-photo{
+        width: 100%;
+        height: auto;
+        order: 2;
+    }
+
+    .profile-content{
+        display: inline;
+    }
+
+    h3{
+        order: 1;
+    }
+
+    p{
+        order: 3;
+    }
+
+    .icons{
+        order: 3;
+    }
+
 }
