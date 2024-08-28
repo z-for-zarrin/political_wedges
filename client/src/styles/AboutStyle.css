@@ -1,20 +1,20 @@
 .profile{
     display: flex;
-    height: 550px;
 }
 
 .profile-photo{
-    height: 500px;
-    width: auto;
-    margin: 20px;
+    height: 100%;
+    width: 50%;
+    margin: 2%;
     border-radius: 20px;
+    align-self: center;
 }
 
 .profile-content{
     display: flex;
     flex-direction: column;
     align-self: center;
-    margin: 40px;
+    margin: 2%;
 }
 
 .profile p{
@@ -40,6 +40,7 @@ sup{
 
 #icon-credit{
     text-align: center;
+    margin-top: 3em;
 }
 
 .credit:link{
@@ -59,4 +60,20 @@ sup{
 .credit:visited{
     margin: 10px;
     color: #00008b;
+}
+
+@media (max-width: 800px) {
+    .profile{
+        flex-direction: column;
+    }
+
+    .profile-photo{
+        width: 100%;
+        height: auto;
+        order: 2;
+    }
+
+    .profile-content{
+        display: inline;
+    }
 }

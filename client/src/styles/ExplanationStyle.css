@@ -1,6 +1,6 @@
 #how-it-works{
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
     line-height: 2em;
 }
 
@@ -42,9 +42,17 @@ sub{
 
 #example-1{
     float: left;
-    margin: 20px;
-    height: 450px;
-    width: auto;
+    margin: 2% 2% 2% 0;
+    height: auto;
+    width: 60%;
+}
+
+@media (max-width: 800px){
+    #example-1{
+        margin: 2%;
+        height: auto;
+        width: 100%;
+    }
 }
 
 #example-box{
@@ -53,14 +61,25 @@ sub{
     justify-content: center;
 }
 
-#example-2{
-    margin: 20px;
-    height: 400px;
-    width: auto;
+#example-box > img{
+    margin: 2%;
+    width: 48%;
+    height: auto;
 }
 
-#example-3{
-    margin: 20px;
-    height: 400px;
-    width: auto;
+@media (max-width: 1000px){
+    #example-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #example-box > img{
+        margin: 2%;
+        width: 100%;
+        height: auto;
+    }
+    
 }
+

@@ -9,6 +9,13 @@ header{
   height: 125px;
 }
 
+@media (max-width: 800px){
+  #logo{
+    width: 100%;
+    height: auto;
+  }
+}
+
 h3{
   font-family: 'Alata', Arial, Helvetica, sans-serif;
   color: #00008b;
@@ -31,6 +38,17 @@ nav > ul{
   float: left;
   width: 125px;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  nav > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .nav-item{
+    width: auto;
+  }
 }
 
 .nav-item a:link, a:visited{
@@ -60,6 +78,11 @@ body{
 
 footer{
   text-align: center;
+  background-color: #b0e0e6;
+  margin-top: 10%;
+  margin-bottom: -4%;
+  padding-bottom: 5px;
+  padding-top: 1px;
 }
 
 /* dark blue: #00008b,
