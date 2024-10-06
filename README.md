@@ -1,4 +1,4 @@
-[!Political Wedges header image](client/src/assets/logo-title.png)
+![Political Wedges header image](client/src/assets/logo-title.png)
 
 # Political Wedges
 
