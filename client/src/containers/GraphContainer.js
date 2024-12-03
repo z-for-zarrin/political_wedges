@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Oval } from 'react-loader-spinner';
 import GraphInput from "../components/GraphInput";
 
 const GraphContainer = () => {
@@ -7,6 +8,7 @@ const GraphContainer = () => {
     const[group2Id, setGroup2Id] = useState(null);
     const[question, setQuestion] = useState(null);
     const[graphSrc, setGraphSrc] = useState("");
+    const[isDataLoading, setIsDataLoading] = useState(false)
 
     const postGraph = async (parameters) => {
         const response = await fetch("https://political-wedges-79f88a2118a5.herokuapp.com/generate-graph", {
@@ -16,6 +18,15 @@ const GraphContainer = () => {
         });
         const graphData = await response.json();
         setGraphSrc(graphData.graph);
+    }
+
+    function Loader() {
+        return (
+            <Oval
+                color='#b0e0e6'
+                secondaryColor='#00008b'
+            />
+        )
     }
 
     return (
