@@ -76,6 +76,10 @@ input:active{
     height: auto;
 }
 
+#loader{
+    text-align: center;
+}
+
 @media (max-width: 800px){
     #parameters-form{
         display: flex;

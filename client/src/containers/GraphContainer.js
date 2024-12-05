@@ -22,10 +22,17 @@ const GraphContainer = () => {
 
     function Loader() {
         return (
-            <Oval
-                color='#b0e0e6'
-                secondaryColor='#00008b'
-            />
+            // <Oval
+            //     visible={true}
+            //     height="80"
+            //     width="80"
+            //     ariaLabel="oval-loading"
+            //     wrapperStyle={{}}
+            //     wrapperClass=""
+            //     color='#b0e0e6'
+            //     secondaryColor='#00008b'
+            // />
+            <p>Loading...</p>
         )
     }
 
@@ -46,7 +53,7 @@ const GraphContainer = () => {
                     <i>Why do you think the 'jump' in the middle occurs?</i>
                 </ol>
                 <i>Notes:</i><br/>
-                <i>The graph may take a while to load after hitting 'Generate'</i><br/>
+                {/* <i>The graph may take a while to load after hitting 'Generate'</i><br/> */}
                 <i>† denotes where a question has been paraphrased for brevity or better formatting</i>
             </section>
             <GraphInput
@@ -56,14 +63,15 @@ const GraphContainer = () => {
                 setGroup2Id={setGroup2Id}
                 question={question}
                 setQuestion={setQuestion}
-                postGraph={postGraph} />
-            {graphSrc ? 
+                postGraph={postGraph}
+                setIsDataLoading={setIsDataLoading} />
+            {isDataLoading ? <p id="loader">Loading...</p> : <></>}
+            {graphSrc && !isDataLoading ? 
             <>
                 <img id="graph" src={"data:image/jpeg;base64," + graphSrc} alt='polarisation parallelogram graph'/>
                 <p className='citation'>Data from NatCen Social Research. (2023). British Social Attitudes Survey, 2021. [data collection]. UK Data Service. SN: 9072, DOI: http://doi.org/10.5255/UKDA-SN-9072-1</p>
             </>
             : null}
-            
         </section>
     );
 }

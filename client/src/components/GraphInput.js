@@ -1,7 +1,7 @@
 import { useState } from "react";
 import '../styles/GraphStyle.css';
 
-const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, setQuestion, postGraph}) => {
+const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, setQuestion, postGraph, setIsDataLoading}) => {
 
     const[groupKey, setGroupKey] = useState("");
     const[groupArray, setGroupArray] = useState([]);
@@ -113,15 +113,17 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
         return <option key={index} value={questionOption}>{questionOption}</option>
     })
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
+        setIsDataLoading(true);
         let parameters = {
             groupVar: groupKey,
             group1Value: group1Id,
             group2Value: group2Id,
             question: question
         }
-        postGraph(parameters);
+        await postGraph(parameters);
+        setIsDataLoading(false);
     }
 
     return(
