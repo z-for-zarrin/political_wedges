@@ -77,7 +77,19 @@ input:active{
 }
 
 #loader{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
     text-align: center;
+}
+
+#spinner{
+    width: 75px;
+    animation: rotate 2s ease 0s infinite normal none;
+}
+
+@keyframes rotate {
+    to {transform: rotate(720deg);}
 }
 
 @media (max-width: 800px){
