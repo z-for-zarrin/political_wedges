@@ -1,5 +1,7 @@
 import { useState } from 'react';
+// import { Oval } from 'react-loader-spinner';
 import GraphInput from "../components/GraphInput";
+import loader from "../assets/logo-alone.svg";
 
 const GraphContainer = () => {
 
@@ -7,6 +9,7 @@ const GraphContainer = () => {
     const[group2Id, setGroup2Id] = useState(null);
     const[question, setQuestion] = useState(null);
     const[graphSrc, setGraphSrc] = useState("");
+    const[isDataLoading, setIsDataLoading] = useState(false)
 
     const postGraph = async (parameters) => {
         const response = await fetch("https://political-wedges-79f88a2118a5.herokuapp.com/generate-graph", {
@@ -35,7 +38,7 @@ const GraphContainer = () => {
                     <i>Why do you think the 'jump' in the middle occurs?</i>
                 </ol>
                 <i>Notes:</i><br/>
-                <i>The graph may take a while to load after hitting 'Generate'</i><br/>
+                {/* <i>The graph may take a while to load after hitting 'Generate'</i><br/> */}
                 <i>† denotes where a question has been paraphrased for brevity or better formatting</i>
             </section>
             <GraphInput
@@ -45,14 +48,19 @@ const GraphContainer = () => {
                 setGroup2Id={setGroup2Id}
                 question={question}
                 setQuestion={setQuestion}
-                postGraph={postGraph} />
-            {graphSrc ? 
+                postGraph={postGraph}
+                setIsDataLoading={setIsDataLoading} />
+            {isDataLoading ? <div id='loader'>
+                                <img id='spinner' src={loader} alt='Loading...'/>
+                                <p>Building your graph...</p>
+                            </div>
+            : null}
+            {graphSrc && !isDataLoading ? 
             <>
                 <img id="graph" src={"data:image/jpeg;base64," + graphSrc} alt='polarisation parallelogram graph'/>
                 <p className='citation'>Data from NatCen Social Research. (2023). British Social Attitudes Survey, 2021. [data collection]. UK Data Service. SN: 9072, DOI: http://doi.org/10.5255/UKDA-SN-9072-1</p>
             </>
             : null}
-            
         </section>
     );
 }

@@ -70,10 +70,26 @@ input:active{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2%;
+    margin-top: 5%;
     border-radius: 5%;
     width: 70%;
     height: auto;
+}
+
+#loader{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#spinner{
+    width: 75px;
+    animation: rotate 2s ease 0s infinite normal none;
+}
+
+@keyframes rotate {
+    to {transform: rotate(720deg);}
 }
 
 @media (max-width: 800px){
