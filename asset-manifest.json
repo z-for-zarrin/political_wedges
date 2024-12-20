@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/political_wedges/static/css/main.93a6f586.css",
-    "main.js": "/political_wedges/static/js/main.ae2cb5c3.js",
+    "main.css": "/political_wedges/static/css/main.2fccee77.css",
+    "main.js": "/political_wedges/static/js/main.39f11a8a.js",
     "static/js/453.419a5d54.chunk.js": "/political_wedges/static/js/453.419a5d54.chunk.js",
     "static/media/joey.JPG": "/political_wedges/static/media/joey.83ff05b208e5ccc5e1c0.JPG",
     "static/media/ordpeople.png": "/political_wedges/static/media/ordpeople.a6a84ec73d7c82e61b40.png",
@@ -9,16 +9,17 @@
     "static/media/Redist.png": "/political_wedges/static/media/Redist.b452ceeb4787d783078f.png",
     "static/media/zarrin.JPG": "/political_wedges/static/media/zarrin.9d2112a6d9cbc4b3c511.JPG",
     "static/media/Parallelogram-Description-And-Proofs.pdf": "/political_wedges/static/media/Parallelogram-Description-And-Proofs.7b2a9240744c616aec74.pdf",
+    "static/media/logo-alone.svg": "/political_wedges/static/media/logo-alone.bd82a19c8a8b81554008dc4f8b60e952.svg",
     "static/media/logo-title.png": "/political_wedges/static/media/logo-title.2abc7bc3d320fbd65ae6.png",
     "static/media/github.png": "/political_wedges/static/media/github.44eee0c4a6c25b0d7347.png",
     "static/media/linkedin.png": "/political_wedges/static/media/linkedin.b543965794897027099a.png",
     "index.html": "/political_wedges/index.html",
-    "main.93a6f586.css.map": "/political_wedges/static/css/main.93a6f586.css.map",
-    "main.ae2cb5c3.js.map": "/political_wedges/static/js/main.ae2cb5c3.js.map",
+    "main.2fccee77.css.map": "/political_wedges/static/css/main.2fccee77.css.map",
+    "main.39f11a8a.js.map": "/political_wedges/static/js/main.39f11a8a.js.map",
     "453.419a5d54.chunk.js.map": "/political_wedges/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93a6f586.css",
-    "static/js/main.ae2cb5c3.js"
+    "static/css/main.2fccee77.css",
+    "static/js/main.39f11a8a.js"
   ]
 }
