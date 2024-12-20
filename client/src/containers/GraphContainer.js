@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Oval } from 'react-loader-spinner';
+// import { Oval } from 'react-loader-spinner';
 import GraphInput from "../components/GraphInput";
+import loader from "../assets/logo-alone.png";
 
 const GraphContainer = () => {
 
@@ -18,22 +19,6 @@ const GraphContainer = () => {
         });
         const graphData = await response.json();
         setGraphSrc(graphData.graph);
-    }
-
-    function Loader() {
-        return (
-            // <Oval
-            //     visible={true}
-            //     height="80"
-            //     width="80"
-            //     ariaLabel="oval-loading"
-            //     wrapperStyle={{}}
-            //     wrapperClass=""
-            //     color='#b0e0e6'
-            //     secondaryColor='#00008b'
-            // />
-            <p>Loading...</p>
-        )
     }
 
     return (
@@ -65,7 +50,11 @@ const GraphContainer = () => {
                 setQuestion={setQuestion}
                 postGraph={postGraph}
                 setIsDataLoading={setIsDataLoading} />
-            {isDataLoading ? <p id="loader">Loading...</p> : <></>}
+            {isDataLoading ? <div id='loader'>
+                                <img id='spinner' src={loader} alt='Loading...'/>
+                                <p>Building your graph...</p>
+                            </div>
+            : null}
             {graphSrc && !isDataLoading ? 
             <>
                 <img id="graph" src={"data:image/jpeg;base64," + graphSrc} alt='polarisation parallelogram graph'/>

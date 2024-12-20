@@ -133,6 +133,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 id="characteristic-select"
                 type="text"
                 name="characteristic"
+                required
                 defaultValue=""
                 onChange={charChangeHandler}>
                 
@@ -149,6 +150,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 className="indented-element"
                 type="text"
                 name="group1"
+                required
                 defaultValue={JSON.stringify({index: null, value:""})}
                 onChange={(event) => {
                     let obj = JSON.parse(event.target.value);
@@ -164,6 +166,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 className="indented-element"
                 type="text"
                 name="group2"
+                required
                 defaultValue={JSON.stringify({index: null, value:""})}
                 onChange={(event) => {
                     let obj = JSON.parse(event.target.value);
@@ -178,6 +181,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 id="topic-select"
                 type="text"
                 name="topic"
+                required
                 defaultValue=""
                 onChange={topicChangeHandler}>
                 
@@ -193,12 +197,13 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 <option value="workplaces">Workplaces</option>
                 <option value="misc">Miscellaneous</option>
             </select>
-            <label htmlFor="question" id="question-label" className="indented-element">Question</label>
+            <label htmlFor="question-select" id="question-label" className="indented-element">Question</label>
             <select
                 id="question-select"
                 className="indented-element"
                 type="text"
                 name="question"
+                required
                 defaultValue=""
                 onChange={(event) => {
                     setQuestion(event.target.value);
