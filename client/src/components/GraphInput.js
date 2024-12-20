@@ -115,6 +115,22 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        if(groupKey == ""){
+            window.alert("Please select a characteristic")
+            return
+        }
+        if(!group1Id || !group2Id){
+            window.alert("Please select two groups to compare")
+            return
+        }
+        if(document.getElementById("topic-select").value == ""){
+            window.alert("Please select a topic")
+            return
+        }
+        if(!question){
+            window.alert("Please select a question")
+            return
+        }
         setIsDataLoading(true);
         let parameters = {
             groupVar: groupKey,
@@ -133,7 +149,6 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 id="characteristic-select"
                 type="text"
                 name="characteristic"
-                required
                 defaultValue=""
                 onChange={charChangeHandler}>
                 
@@ -150,7 +165,6 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 className="indented-element"
                 type="text"
                 name="group1"
-                required
                 defaultValue={JSON.stringify({index: null, value:""})}
                 onChange={(event) => {
                     let obj = JSON.parse(event.target.value);
@@ -166,7 +180,6 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 className="indented-element"
                 type="text"
                 name="group2"
-                required
                 defaultValue={JSON.stringify({index: null, value:""})}
                 onChange={(event) => {
                     let obj = JSON.parse(event.target.value);
@@ -181,7 +194,6 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 id="topic-select"
                 type="text"
                 name="topic"
-                required
                 defaultValue=""
                 onChange={topicChangeHandler}>
                 
@@ -203,7 +215,6 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
                 className="indented-element"
                 type="text"
                 name="question"
-                required
                 defaultValue=""
                 onChange={(event) => {
                     setQuestion(event.target.value);
