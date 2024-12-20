@@ -115,7 +115,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        if(groupKey == ""){
+        if(!groupKey){
             window.alert("Please select a characteristic")
             return
         }
@@ -123,7 +123,7 @@ const GraphInput = ({group1Id, setGroup1Id, group2Id, setGroup2Id, question, set
             window.alert("Please select two groups to compare")
             return
         }
-        if(document.getElementById("topic-select").value == ""){
+        if(!document.getElementById("topic-select").value){
             window.alert("Please select a topic")
             return
         }
