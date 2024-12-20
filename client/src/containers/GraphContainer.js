@@ -1,7 +1,7 @@
 import { useState } from 'react';
 // import { Oval } from 'react-loader-spinner';
 import GraphInput from "../components/GraphInput";
-import loader from "../assets/logo-alone.png";
+import loader from "../assets/logo-alone.svg";
 
 const GraphContainer = () => {
 
